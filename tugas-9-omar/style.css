@@ -1,42 +1,49 @@
 h1 {
-    color: red;
+  color: red;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h3 {
-    color: darkgreen;
+  color: darkgreen;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .one {
-    background-color: black;
-    color: white;
+  color: darkgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .two {
-     background-color: black;
-    color: white;
+  color: darkgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .three {
-     background-color: black;
-    color: white;
+  color: darkgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .four {
-     background-color: black;
-    color: white;
+  color: darkgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .five {
-     background-color: black;
-    color: white;
+  color: darkgreen;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer {
-    background-color: black;
-    color: yellow;
+  color: midnightblue;
 }
 
 i {
-    color: midnightblue;
-    font-size: 19px;
+  color: crimson;
+  font-size: 19px;
+}
+
+section {
+  background-color: lightblue;
+  padding: 35px;
+  border-radius: 50px;
 }
