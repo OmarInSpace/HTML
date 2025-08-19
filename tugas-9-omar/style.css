@@ -1,0 +1,42 @@
+h1 {
+    color: red;
+}
+
+h3 {
+    color: darkgreen;
+}
+
+.one {
+    background-color: black;
+    color: white;
+}
+
+.two {
+     background-color: black;
+    color: white;
+}
+
+.three {
+     background-color: black;
+    color: white;
+}
+
+.four {
+     background-color: black;
+    color: white;
+}
+
+.five {
+     background-color: black;
+    color: white;
+}
+
+footer {
+    background-color: black;
+    color: yellow;
+}
+
+i {
+    color: midnightblue;
+    font-size: 19px;
+}

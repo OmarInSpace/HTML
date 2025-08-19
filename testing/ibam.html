@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ibrahim Omar - Cyberpunk Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+    body {
+      background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+    }
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 15px 0;
+      background: rgba(0,0,0,0.8);
+      text-align: center;
+      z-index: 999;
+      backdrop-filter: blur(5px);
+    }
+    nav a {
+      color: #0ff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      font-family: 'Orbitron', sans-serif;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #f0f; text-shadow: 0 0 10px #f0f; }
+    header {
+      height: 100vh;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      color: #0ff;
+      text-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #f0f;
+      text-shadow: 0 0 10px #f0f;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2.section-title {
+      font-size: 2rem;
+      font-family: 'Orbitron', sans-serif;
+      text-align: center;
+      margin-bottom: 40px;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+    }
+    /* Tentang */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+    .about img {
+      width: 250px;
+      border-radius: 15px;
+      border: 3px solid #0ff;
+      box-shadow: 0 0 20px #0ff;
+    }
+    .about-text { flex: 1; min-width: 280px; }
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .skill-card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid rgba(255,255,255,0.2);
+      transition: 0.3s;
+    }
+    .skill-card:hover {
+      border-color: #0ff;
+      box-shadow: 0 0 15px #0ff;
+    }
+    .skill-card i { font-size: 2rem; margin-bottom: 10px; color: #f0f; }
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: rgba(255,255,255,0.05);
+      border-radius: 10px;
+      overflow: hidden;
+      transition: 0.3s;
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+    .project-card:hover {
+      border-color: #f0f;
+      box-shadow: 0 0 15px #f0f;
+    }
+    .project-card img { width: 100%; height: 180px; object-fit: cover; }
+    .project-card .content { padding: 15px; }
+    .project-card h3 { color: #0ff; }
+    /* Contact */
+    .contact { text-align: center; }
+    .contact a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #0ff;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .contact a:hover { color: #f0f; text-shadow: 0 0 10px #f0f; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(0,0,0,0.8);
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#skills">Skill</a>
+    <a href="#projects">Proyek</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <header>
+    <h1>IBRAHIM OMAR</h1>
+    <p>Cyberpunk Santri | Web Developer | Hafizh Qur'an</p>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="about">
+      <img src="https://via.placeholder.com/250" alt="Foto Ibrahim">
+      <div class="about-text">
+        <p>Saya Ibrahim Omar, pelajar kelas 9 di Pondok Tahfizh Abudzar. Saya memadukan hafalan Al-Qur’an dengan teknologi masa depan, menggabungkan nilai Islami dengan kreativitas digital. Misi saya adalah membawa cahaya Qur'an ke dunia cyber.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skill</h2>
+    <div class="skills">
+      <div class="skill-card">
+        <i class="fas fa-book-quran"></i>
+        <h3>Hafalan Qur'an</h3>
+        <p>Menghafal dan memahami ayat-ayat suci.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, desain cyberpunk.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-paint-brush"></i>
+        <h3>Desain Digital</h3>
+        <p>Poster dan UI futuristik.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Proyek</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 1">
+        <div class="content">
+          <h3>Website Profil Santri</h3>
+          <p>Website futuristik dengan tema cyberpunk untuk santri modern.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 2">
+        <div class="content">
+          <h3>Poster Kajian Digital</h3>
+          <p>Poster islami neon style untuk acara kajian remaja.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Kontak</h2>
+    <div class="contact">
+      <a href="mailto:ibrahim.omar@email.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/ibrahim.omar" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Ibrahim Omar | Cyberpunk Portfolio
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ibrahim Omar - Manchester United Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+    body { background: #111; color: #fff; }
+    nav {
+      background: #da291c;
+      padding: 15px 0;
+      text-align: center;
+      position: fixed;
+      top: 0; width: 100%;
+      z-index: 999;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #ffd100; }
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://upload.wikimedia.org/wikipedia/en/7/7a/Manchester_United_FC_crest.svg') no-repeat center;
+      background-size: 200px;
+      display: flex; flex-direction: column; justify-content: center; align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #ffd100;
+      text-shadow: 0 0 10px #da291c;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #fff;
+      margin-top: 10px;
+    }
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    h2.section-title {
+      font-size: 2rem;
+      color: #ffd100;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    /* Tentang */
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+    .about img {
+      width: 250px;
+      border-radius: 15px;
+      border: 4px solid #da291c;
+      box-shadow: 0 0 20px #da291c;
+    }
+    .about-text { flex: 1; min-width: 280px; }
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .skill-card {
+      background: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      border: 2px solid #da291c;
+      transition: 0.3s;
+    }
+    .skill-card:hover {
+      box-shadow: 0 0 15px #da291c;
+    }
+    .skill-card i { font-size: 2rem; margin-bottom: 10px; color: #ffd100; }
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: #1a1a1a;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #da291c;
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      box-shadow: 0 0 15px #ffd100;
+    }
+    .project-card img { width: 100%; height: 180px; object-fit: cover; }
+    .project-card .content { padding: 15px; }
+    .project-card h3 { color: #ffd100; }
+    /* Contact */
+    .contact { text-align: center; }
+    .contact a {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #ffd100;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .contact a:hover { color: #da291c; }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #da291c;
+      font-size: 0.9rem;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">Tentang</a>
+    <a href="#skills">Skill</a>
+    <a href="#projects">Proyek</a>
+    <a href="#contact">Kontak</a>
+  </nav>
+
+  <header>
+    <h1>IBRAHIM OMAR</h1>
+    <p>Santri | Web Developer | Fans Manchester United</p>
+  </header>
+
+  <section id="about">
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="about">
+      <img src="https://via.placeholder.com/250" alt="Foto Ibrahim">
+      <div class="about-text">
+        <p>Saya Ibrahim Omar, pelajar kelas 9 di Pondok Tahfizh Abudzar. Saya seorang fans berat Manchester United, dan saya memadukan kecintaan saya terhadap sepakbola dengan keterampilan teknologi dan desain web. Motto hidup saya: <b>Glory Glory Man United!</b></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2 class="section-title">Skill</h2>
+    <div class="skills">
+      <div class="skill-card">
+        <i class="fas fa-book-quran"></i>
+        <h3>Hafalan Qur'an</h3>
+        <p>Menghafal dan memahami ayat-ayat suci Al-Qur'an.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-laptop-code"></i>
+        <h3>Web Development</h3>
+        <p>HTML, CSS, dan desain website responsif.</p>
+      </div>
+      <div class="skill-card">
+        <i class="fas fa-futbol"></i>
+        <h3>Sepakbola</h3>
+        <p>Fans dan analis pertandingan Manchester United.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2 class="section-title">Proyek</h2>
+    <div class="projects">
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 1">
+        <div class="content">
+          <h3>Website Profil Santri</h3>
+          <p>Website pribadi dengan desain merah-hitam khas MU.</p>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="https://via.placeholder.com/400x200" alt="Project 2">
+        <div class="content">
+          <h3>Poster Jadwal MU</h3>
+          <p>Poster digital jadwal pertandingan Manchester United.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">Kontak</h2>
+    <div class="contact">
+      <a href="mailto:ibrahim.omar@email.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/ibrahim.omar" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Ibrahim Omar | Glory Glory Man United
+  </footer>
+
+</body>
+</html>

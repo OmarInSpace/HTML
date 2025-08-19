@@ -1,0 +1,23 @@
+h2{
+font-family: Arial;
+color: #333;
+}
+i{
+    font-family: 'Trebuchet MS';
+    color: red;
+}
+p{
+    line-height: 1.75em;
+    font-family: 'Gill Sans';
+
+}
+body{
+    background-color: cornsilk;
+}
+h3{
+    font-family: Courier;
+}
+b{
+    font-family: Verdana;
+    color: goldenrod;
+}
