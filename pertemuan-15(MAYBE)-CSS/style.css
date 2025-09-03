@@ -1,0 +1,28 @@
+/*body {
+    background-image: url(./asset/Matheus\ Cunha.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+*/
+h1 {
+    color: midnightblue;
+    text-align: center;
+}
+
+body {
+    background-image: url(./asset/wave.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur;
+    padding: 1rem;
+}
+
+nav {
+     color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur;
+    padding: 1rem;
+}

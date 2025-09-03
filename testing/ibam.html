@@ -1,218 +1,280 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ibrahim Omar - Cyberpunk Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manchester United — Fan Page (Demo)</title>
+  <meta name="description" content="Demo modern landing page bertema Manchester United — roster pemain, berita, jadwal, teks berjalan, dan efek visual profesional. Ganti data placeholder dengan data nyata jika perlu." />
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
-    body {
-      background: radial-gradient(circle at top, #0f0c29, #302b63, #24243e);
-      color: #fff;
-      font-family: 'Poppins', sans-serif;
+    /* ---------- Palette & base ---------- */
+    :root{
+      --bg:#070507; --card:#0f0b0c; --muted:#9fb3c8; --white:#f6f7f8; --accent:#cf102d; --accent-2:#ffb400;
+      --glass: rgba(255,255,255,0.03); --radius:12px; --maxw:1200px;
     }
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      padding: 15px 0;
-      background: rgba(0,0,0,0.8);
-      text-align: center;
-      z-index: 999;
-      backdrop-filter: blur(5px);
-    }
-    nav a {
-      color: #0ff;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      font-family: 'Orbitron', sans-serif;
-      transition: 0.3s;
-    }
-    nav a:hover { color: #f0f; text-shadow: 0 0 10px #f0f; }
-    header {
-      height: 100vh;
-      display: flex; flex-direction: column; justify-content: center; align-items: center;
-      text-align: center;
-      padding: 20px;
-    }
-    header h1 {
-      font-family: 'Orbitron', sans-serif;
-      font-size: 3rem;
-      color: #0ff;
-      text-shadow: 0 0 15px #0ff, 0 0 30px #0ff;
-    }
-    header p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #f0f;
-      text-shadow: 0 0 10px #f0f;
-    }
-    section {
-      padding: 80px 20px;
-      max-width: 1100px;
-      margin: auto;
-    }
-    h2.section-title {
-      font-size: 2rem;
-      font-family: 'Orbitron', sans-serif;
-      text-align: center;
-      margin-bottom: 40px;
-      color: #0ff;
-      text-shadow: 0 0 10px #0ff;
-    }
-    /* Tentang */
-    .about {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      align-items: center;
-      justify-content: center;
-    }
-    .about img {
-      width: 250px;
-      border-radius: 15px;
-      border: 3px solid #0ff;
-      box-shadow: 0 0 20px #0ff;
-    }
-    .about-text { flex: 1; min-width: 280px; }
-    /* Skills */
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-    }
-    .skill-card {
-      background: rgba(255,255,255,0.05);
-      padding: 20px;
-      border-radius: 10px;
-      text-align: center;
-      border: 1px solid rgba(255,255,255,0.2);
-      transition: 0.3s;
-    }
-    .skill-card:hover {
-      border-color: #0ff;
-      box-shadow: 0 0 15px #0ff;
-    }
-    .skill-card i { font-size: 2rem; margin-bottom: 10px; color: #f0f; }
-    /* Projects */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .project-card {
-      background: rgba(255,255,255,0.05);
-      border-radius: 10px;
-      overflow: hidden;
-      transition: 0.3s;
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .project-card:hover {
-      border-color: #f0f;
-      box-shadow: 0 0 15px #f0f;
-    }
-    .project-card img { width: 100%; height: 180px; object-fit: cover; }
-    .project-card .content { padding: 15px; }
-    .project-card h3 { color: #0ff; }
-    /* Contact */
-    .contact { text-align: center; }
-    .contact a {
-      margin: 0 10px;
-      font-size: 1.5rem;
-      color: #0ff;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-    .contact a:hover { color: #f0f; text-shadow: 0 0 10px #f0f; }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: rgba(0,0,0,0.8);
-      font-size: 0.9rem;
-      color: #aaa;
-    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;color:var(--white);background:linear-gradient(180deg,#050405 0%,var(--bg) 60%);}
+    a{color:inherit}
+
+    /* ---------- Header ---------- */
+    header{display:flex;align-items:center;gap:18px;padding:18px 22px;border-bottom:1px solid rgba(255,255,255,0.03);position:sticky;top:0;background:linear-gradient(180deg,rgba(0,0,0,0.25),transparent);backdrop-filter: blur(6px);z-index:40}
+    .crest{width:72px;height:72px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(180deg,var(--accent),#9b0b18);box-shadow:0 10px 40px rgba(207,16,45,0.14);transform-origin:center;animation:crestPulse 6s ease-in-out infinite}
+    @keyframes crestPulse{0%{transform:scale(1)}50%{transform:scale(1.02)}100%{transform:scale(1)}}
+    .brand{font-weight:800;font-size:20px}
+    .nav{margin-left:auto;display:flex;gap:12px;align-items:center}
+    .nav a{padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;font-size:14px}
+    .cta{background:linear-gradient(90deg,var(--accent),#ff5b5b);box-shadow:0 6px 18px rgba(207,16,45,0.16)}
+
+    /* ---------- Marquee ---------- */
+    .marquee{width:100%;overflow:hidden;padding:8px 12px;border-radius:10px;background:linear-gradient(90deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03);display:flex;align-items:center;gap:12px;margin-top:12px}
+    .marquee .strip{display:inline-flex;gap:36px;white-space:nowrap;animation:mar 18s linear infinite}
+    @keyframes mar{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+    .marquee b{color:var(--accent)}
+
+    /* ---------- Layout ---------- */
+    main{max-width:var(--maxw);margin:20px auto;padding:18px}
+    .layout{display:grid;grid-template-columns:1fr 340px;gap:18px}
+    @media (max-width:980px){.layout{grid-template-columns:1fr}}
+
+    /* ---------- Roster / Cards ---------- */
+    .controls{display:flex;gap:10px;align-items:center;margin-bottom:12px}
+    input[type=search]{flex:1;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
+    select{padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,0.03);background:transparent;color:inherit}
+
+    .players{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+    .player{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));padding:12px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);display:flex;gap:12px;align-items:center;transition:transform .18s, box-shadow .18s;cursor:pointer}
+    .player:hover{transform:translateY(-6px);box-shadow:0 18px 40px rgba(0,0,0,0.6)}
+    .avatar{width:84px;height:84px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:24px;color:white;flex-shrink:0}
+    .meta{display:flex;flex-direction:column}
+    .meta .name{font-weight:700}
+    .meta .pos{color:var(--muted);font-size:13px;margin-top:6px}
+    .num{margin-left:auto;background:linear-gradient(90deg,var(--accent),#ff6b6b);padding:6px 10px;border-radius:10px;font-weight:800}
+
+    /* ---------- Sidebar ---------- */
+    .side{position:sticky;top:20px;padding:12px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)}
+    .side h3{margin:0 0 10px 0}
+    .news{display:flex;flex-direction:column;gap:10px}
+    .news-item{padding:10px;border-radius:10px;background:var(--card);border:1px solid rgba(255,255,255,0.02)}
+
+    /* ---------- Hero / Banner ---------- */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:16px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03);align-items:center}
+    .hero .title{font-size:22px;font-weight:800}
+    .hero .sub{color:var(--muted);margin-top:6px}
+    .hero .stats{display:flex;gap:12px;margin-top:12px}
+    .stat{padding:10px;border-radius:10px;background:var(--glass);text-align:center}
+
+    /* ---------- Footer terminal ribbon ---------- */
+    .terminal{margin-top:12px;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.25));font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;color:var(--muted);font-size:13px}
+
+    /* ---------- Modal ---------- */
+    .modal-backdrop{position:fixed;inset:0;background:rgba(2,6,10,0.6);display:grid;place-items:center;z-index:50;padding:18px}
+    .modal{width:min(820px,96vw);background:linear-gradient(180deg,#070405,#0f0b0c);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
+    .modal .head{display:flex;gap:12px;align-items:center}
+    .close{margin-left:auto;cursor:pointer}
+
+    /* ---------- small UI niceties ---------- */
+    .small{font-size:13px;color:var(--muted)}
+    .muted{color:var(--muted)}
+
+    /* ---------- responsive tweaks ---------- */
+    @media (max-width:980px){.hero{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
-
-  <nav>
-    <a href="#about">Tentang</a>
-    <a href="#skills">Skill</a>
-    <a href="#projects">Proyek</a>
-    <a href="#contact">Kontak</a>
-  </nav>
-
   <header>
-    <h1>IBRAHIM OMAR</h1>
-    <p>Cyberpunk Santri | Web Developer | Hafizh Qur'an</p>
+    <div class="crest" aria-hidden="true">
+      <!-- SVG crest inspired (generic) -->
+      <svg width="56" height="56" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Crest">
+        <defs>
+          <linearGradient id="g1" x1="0" x2="1"><stop offset="0" stop-color="#cf102d"/><stop offset="1" stop-color="#ff6b6b"/></linearGradient>
+        </defs>
+        <rect x="8" y="8" width="84" height="84" rx="12" fill="url(#g1)" />
+        <text x="50%" y="58%" text-anchor="middle" font-size="44" font-family="Arial" fill="#fff" font-weight="800">MU</text>
+      </svg>
+    </div>
+    <div>
+      <div class="brand">Manchester United — Official Fan Demo</div>
+      <div class="small muted">Design modern • Demo only • Replace placeholder data</div>
+    </div>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#roster">Roster</a>
+      <a href="#news">News</a>
+      <a href="#matches">Matches</a>
+      <a href="#shop" class="cta">Shop</a>
+    </nav>
   </header>
 
-  <section id="about">
-    <h2 class="section-title">Tentang Saya</h2>
-    <div class="about">
-      <img src="https://via.placeholder.com/250" alt="Foto Ibrahim">
-      <div class="about-text">
-        <p>Saya Ibrahim Omar, pelajar kelas 9 di Pondok Tahfizh Abudzar. Saya memadukan hafalan Al-Qur’an dengan teknologi masa depan, menggabungkan nilai Islami dengan kreativitas digital. Misi saya adalah membawa cahaya Qur'an ke dunia cyber.</p>
+  <main>
+    <div class="marquee" aria-hidden="true">
+      <div class="strip">
+        <span><b>NEWS</b> — Transfer window updates • Contract renewals • Injury reports</span>
+        <span><b>MATCHDAY</b> — Kickoff 20:00 GMT</span>
+        <span><b>CLUB</b> — Fans: Show your support! #MUFC</span>
+        <span><b>NEWS</b> — Transfer window updates • Contract renewals • Injury reports</span>
       </div>
     </div>
-  </section>
 
-  <section id="skills">
-    <h2 class="section-title">Skill</h2>
-    <div class="skills">
-      <div class="skill-card">
-        <i class="fas fa-book-quran"></i>
-        <h3>Hafalan Qur'an</h3>
-        <p>Menghafal dan memahami ayat-ayat suci.</p>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-laptop-code"></i>
-        <h3>Web Development</h3>
-        <p>HTML, CSS, desain cyberpunk.</p>
-      </div>
-      <div class="skill-card">
-        <i class="fas fa-paint-brush"></i>
-        <h3>Desain Digital</h3>
-        <p>Poster dan UI futuristik.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2 class="section-title">Proyek</h2>
-    <div class="projects">
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="Project 1">
-        <div class="content">
-          <h3>Website Profil Santri</h3>
-          <p>Website futuristik dengan tema cyberpunk untuk santri modern.</p>
+    <section class="hero" style="margin-top:18px">
+      <div>
+        <div class="title">Selamat datang di Manchester United — Fan Page (Demo)</div>
+        <div class="sub">Halaman ini dibuat sebagai demo HTML modern: roster, berita, jadwal, footer terminal, dan efek visual.</div>
+        <div class="stats">
+          <div class="stat"><div style="font-weight:800">20</div><div class="small muted">Liga</div></div>
+          <div class="stat"><div style="font-weight:800">34</div><div class="small muted">Pertandingan</div></div>
+          <div class="stat"><div style="font-weight:800">68</div><div class="small muted">Total Gol</div></div>
         </div>
       </div>
-      <div class="project-card">
-        <img src="https://via.placeholder.com/400x200" alt="Project 2">
-        <div class="content">
-          <h3>Poster Kajian Digital</h3>
-          <p>Poster islami neon style untuk acara kajian remaja.</p>
+      <aside style="display:flex;flex-direction:column;gap:12px">
+        <div style="padding:12px;border-radius:12px;background:var(--card);border:1px solid rgba(255,255,255,0.03)">
+          <div style="font-weight:700">Next Match</div>
+          <div class="muted small">Sat, Oct 11 — Old Trafford • Kickoff 20:00</div>
+        </div>
+        <div style="padding:12px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#ff6b6b);color:#0b0b0b;font-weight:700;text-align:center">Buy Tickets</div>
+      </aside>
+    </section>
+
+    <div class="layout" style="margin-top:16px">
+      <section id="roster">
+        <div class="controls">
+          <input type="search" id="search" placeholder="Cari pemain, nomor, posisi..." aria-label="Cari pemain">
+          <select id="posFilter" aria-label="Filter posisi">
+            <option value="all">Semua Posisi</option>
+            <option value="GK">Goalkeeper</option>
+            <option value="DEF">Defender</option>
+            <option value="MID">Midfielder</option>
+            <option value="FWD">Forward</option>
+          </select>
+          <select id="sortBy" aria-label="Urutkan">
+            <option value="num">Urutkan: Nomor</option>
+            <option value="name">Urutkan: Nama</option>
+          </select>
+        </div>
+
+        <div class="players" id="players" aria-live="polite">
+          <!-- Cards rendered by JS -->
+        </div>
+
+        <div class="terminal" aria-hidden="false">
+          $ demo-console: roster loaded — replace with live API for real data
+        </div>
+      </section>
+
+      <aside class="side">
+        <h3 id="news">Latest News</h3>
+        <div class="news" id="newsList">
+          <!-- Small news items (placeholders) -->
+          <div class="news-item"><strong>Official:</strong> Squad training resumes — coach comments.</div>
+          <div class="news-item"><strong>Transfer:</strong> Club monitoring several targets.</div>
+          <div class="news-item"><strong>Match:</strong> Tickets on sale for next home game.</div>
+        </div>
+
+        <h3 style="margin-top:14px">Sponsors</h3>
+        <div style="display:flex;gap:10px;margin-top:8px;flex-wrap:wrap">
+          <div style="width:72px;height:44px;background:linear-gradient(90deg,#222,#333);border-radius:8px;display:grid;place-items:center">A</div>
+          <div style="width:72px;height:44px;background:linear-gradient(90deg,#222,#333);border-radius:8px;display:grid;place-items:center">B</div>
+          <div style="width:72px;height:44px;background:linear-gradient(90deg,#222,#333);border-radius:8px;display:grid;place-items:center">C</div>
+        </div>
+
+      </aside>
+    </div>
+
+    <section id="matches" style="margin-top:18px">
+      <h3>Upcoming Matches</h3>
+      <div style="display:flex;gap:12px;overflow:auto;padding:10px 0">
+        <div style="min-width:220px;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)">Oct 11 — vs Rival FC — Old Trafford</div>
+        <div style="min-width:220px;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)">Oct 17 — vs Away Team — Away</div>
+      </div>
+    </section>
+
+    <!-- Modal template -->
+    <template id="tplModal">
+      <div class="modal-backdrop">
+        <div class="modal">
+          <div class="head">
+            <div class="avatar-modal" style="width:96px;height:96px;border-radius:10px;display:grid;place-items:center;font-weight:800;font-size:36px;color:white;background:linear-gradient(120deg,#222,#333);margin-right:12px"></div>
+            <div>
+              <div id="mName" style="font-weight:800;font-size:20px"></div>
+              <div id="mPos" class="muted small" style="margin-top:6px"></div>
+              <div id="mBio" style="margin-top:8px" class="small muted"></div>
+            </div>
+            <div class="close">✕</div>
+          </div>
+
+          <div style="margin-top:12px;display:flex;gap:12px;flex-wrap:wrap">
+            <div style="flex:1;min-width:140px;background:var(--glass);padding:10px;border-radius:8px">Pertandingan: <b id="mGames">0</b></div>
+            <div style="flex:1;min-width:140px;background:var(--glass);padding:10px;border-radius:8px">Gol: <b id="mGoals">0</b></div>
+            <div style="flex:1;min-width:140px;background:var(--glass);padding:10px;border-radius:8px">Assist: <b id="mAssists">0</b></div>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </template>
 
-  <section id="contact">
-    <h2 class="section-title">Kontak</h2>
-    <div class="contact">
-      <a href="mailto:ibrahim.omar@email.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://instagram.com/ibrahim.omar" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://wa.me/6281234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    </div>
-  </section>
+    <footer style="margin-top:22px;padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)">
+      <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div class="small muted">© Manchester United — Fan Page Demo • Buat untuk tujuan demo saja.</div>
+        <div class="small">Keyboard: '/' cari • 'N' news</div>
+      </div>
+    </footer>
+  </main>
 
-  <footer>
-    © 2025 Ibrahim Omar | Cyberpunk Portfolio
-  </footer>
+  <script>
+    // ---------- Demo roster data (placeholder). Replace with real API when ready ----------
+    const roster = [
+      {id:1,name:'Player One',num:7,pos:'FWD',bio:'Fast winger with great finishing',games:36,goals:18,assists:9},
+      {id:2,name:'Player Two',num:10,pos:'MID',bio:'Creative playmaker and set-piece specialist',games:40,goals:12,assists:16},
+      {id:3,name:'Player Three',num:1,pos:'GK',bio:'Reliable goalkeeper, excellent reflexes',games:42,goals:0,assists:0},
+      {id:4,name:'Player Four',num:4,pos:'DEF',bio:'Center-back leader, strong aerially',games:38,goals:3,assists:1},
+      {id:5,name:'Player Five',num:11,pos:'FWD',bio:'Wide attacker, pace and dribbling',games:30,goals:10,assists:7},
+      {id:6,name:'Player Six',num:8,pos:'MID',bio:'Box-to-box midfielder, tireless workrate',games:34,goals:5,assists:8},
+      {id:7,name:'Player Seven',num:2,pos:'DEF',bio:'Fullback with attacking instincts',games:32,goals:1,assists:4},
+      {id:8,name:'Player Eight',num:14,pos:'MID',bio:'Defensive midfielder, strong interception',games:28,goals:2,assists:3}
+    ];
 
+    // Utility: deterministic gradient per name
+    function nameToGradient(name){ let h=0; for(let i=0;i<name.length;i++) h=(h<<5)-h+name.charCodeAt(i); const r = Math.abs(h)%200 + 20; const g = (Math.abs(h*7)%200)+20; const b = (Math.abs(h*13)%200)+20; return `linear-gradient(120deg,rgb(${r},${g},${b}), rgb(${Math.min(255,r+40)},${Math.min(255,g+30)},${Math.min(255,b+20)}))`; }
+
+    // Render roster
+    const playersEl = document.getElementById('players');
+    function initials(name){ const p=name.split(' '); return (p[0][0]||'') + (p[p.length-1] ? p[p.length-1][0] : ''); }
+    function renderList(list){ playersEl.innerHTML=''; if(list.length===0){ playersEl.innerHTML='<div style="color:var(--muted)">Tidak ada pemain.</div>'; return; }
+      list.forEach(p=>{
+        const el = document.createElement('article'); el.className='player'; el.tabIndex=0;
+        const av = document.createElement('div'); av.className='avatar'; av.textContent=initials(p.name).toUpperCase(); av.style.background = nameToGradient(p.name);
+        const meta = document.createElement('div'); meta.className='meta'; meta.innerHTML = `<div class='name'>${p.name}</div><div class='pos'>${p.pos}</div>`;
+        const num = document.createElement('div'); num.className='num'; num.textContent = '#'+p.num;
+        el.appendChild(av); el.appendChild(meta); el.appendChild(num);
+        el.addEventListener('click', ()=> openModal(p)); el.addEventListener('keypress', e=>{ if(e.key==='Enter') openModal(p); });
+        playersEl.appendChild(el);
+      });
+    }
+    renderList(roster);
+
+    // Search & filter
+    const searchEl = document.getElementById('search'); const posFilter = document.getElementById('posFilter'); const sortBy = document.getElementById('sortBy');
+    function applyFilters(){ let q = searchEl.value.trim().toLowerCase(); let pos = posFilter.value; let sorted = [...roster]; if(pos!=='all') sorted = sorted.filter(p=>p.pos===pos);
+      if(q) sorted = sorted.filter(p=> p.name.toLowerCase().includes(q) || String(p.num).includes(q) || p.pos.toLowerCase().includes(q));
+      if(sortBy.value==='name') sorted.sort((a,b)=>a.name.localeCompare(b.name)); else sorted.sort((a,b)=>a.num - b.num);
+      renderList(sorted);
+    }
+    searchEl.addEventListener('input', applyFilters); posFilter.addEventListener('change', applyFilters); sortBy.addEventListener('change', applyFilters);
+
+    // Modal
+    function openModal(p){ const tpl=document.getElementById('tplModal'); const node = tpl.content.cloneNode(true); const backdrop = node.querySelector('.modal-backdrop'); backdrop.querySelector('.avatar-modal').style.background = nameToGradient(p.name); backdrop.querySelector('#mName').textContent = p.name; backdrop.querySelector('#mPos').textContent = p.pos + ' • #' + p.num; backdrop.querySelector('#mBio').textContent = p.bio; backdrop.querySelector('#mGames').textContent = p.games; backdrop.querySelector('#mGoals').textContent = p.goals; backdrop.querySelector('#mAssists').textContent = p.assists; backdrop.querySelector('.close').addEventListener('click', ()=> backdrop.remove()); backdrop.addEventListener('click', e=>{ if(e.target === backdrop) backdrop.remove(); }); document.body.appendChild(backdrop); }
+
+    // Keyboard shortcuts
+    window.addEventListener('keydown', e=>{ if(e.key === '/') { e.preventDefault(); searchEl.focus(); } if(e.key.toLowerCase()==='n'){ document.getElementById('newsList').scrollIntoView({behavior:'smooth'}); } });
+
+    // Small: pause marquee on hover
+    document.querySelectorAll('.marquee').forEach(m=>{ m.addEventListener('mouseenter', ()=> m.querySelector('.strip').style.animationPlayState='paused'); m.addEventListener('mouseleave', ()=> m.querySelector('.strip').style.animationPlayState='running'); });
+
+    // Accessibility: focus styles
+    document.addEventListener('focusin', e=>{ if(e.target.matches('.player')) e.target.style.outline='2px solid rgba(255,255,255,0.06)' }); document.addEventListener('focusout', e=>{ if(e.target.matches('.player')) e.target.style.outline='none' });
+
+    // OPTIONAL: download roster JSON
+    function downloadJSON(){ const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(roster,null,2)); const a = document.createElement('a'); a.href = dataStr; a.download = 'mu-roster-demo.json'; document.body.appendChild(a); a.click(); a.remove(); }
+
+    // Expose for dev console (optional)
+    window.__MU_DEMO = {roster, renderList, applyFilters, downloadJSON};
+  </script>
 </body>
 </html>

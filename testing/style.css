@@ -1,0 +1,10 @@
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  background-color: black;
+  color: aqua;
+}
+
+body {
+background: linear-gradient(100deg, rgba(4, 75, 0, 1) 50%, rgba(49, 310, 1, 1230));
+}

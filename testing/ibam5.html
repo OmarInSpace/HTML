@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigasi dengan Logo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Container navigasi */
+    nav {
+      background-color: #333;
+      padding: 10px 20px;
+      display: flex;              /* flexbox */
+      justify-content: space-between; /* logo di kiri, menu di kanan */
+      align-items: center;        /* rata tengah vertikal */
+    }
+
+    /* Logo */
+    .logo {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* List menu */
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+
+    nav ul li {
+      margin-left: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 8px 12px;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #555;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <!-- Logo di kiri -->
+    <a href="#" class="logo">LOGO</a>
+
+    <!-- Menu di kanan -->
+    <ul>
+      <li><a href="#">Beranda</a></li>
+      <li><a href="#">Tentang</a></li>
+      <li><a href="#">Layanan</a></li>
+      <li><a href="#">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <h1>Website dengan Logo dan Navigasi</h1>
+    <p>Logo ada di kiri, menu ada di kanan.</p>
+  </section>
+
+</body>
+</html>

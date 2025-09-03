@@ -1,0 +1,78 @@
+/* * {
+    border: 3px solid blue;
+}
+*/
+p {
+    color: blue;
+}
+
+div {
+    color: green;
+}
+
+b {
+    font-size: 20px;
+    color: turquoise;
+}
+
+.pink {
+    color: darkgoldenrod;
+    background-color: pink;
+    padding: 20px;
+    font-weight: 700;
+}
+
+.bold {
+    font-weight: bolder;
+    color: brown;
+}
+
+.text-white {
+    color: white;
+}
+
+.bg-teal {
+    background-color: teal;
+}
+
+#header {
+    background-color: teal;
+    color: white;
+    height: 100px;
+    padding: 50px;
+}
+
+input[type="text"] {
+    background: black;
+    color: white;
+    padding: 10px;
+    border: 2px solid white;
+    width: 300px;
+}
+
+/*a:hover {
+    color: red;
+}
+*/
+.Home-Link:hover {
+color: teal;
+background: white;
+text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.Another:hover {
+    color: white;
+    background: red;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+p::first-line{
+    color: magenta;
+    font-weight: 900;
+}

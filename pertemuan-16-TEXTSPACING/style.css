@@ -1,0 +1,98 @@
+h1 {
+  letter-spacing: -2px;
+  word-spacing: 4px;
+}
+
+.small {
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.line-height {
+  line-height: 1.6;
+}
+
+.indent {
+  text-indent: 2em;
+}
+
+.nowrap {
+  white-space: break-spaces;
+}
+
+.ovf {
+  width: 320px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+h3 {
+  color: green;
+  text-shadow: -2px 7px 6px rgba(0, 0, 0, 0.8);
+}
+
+.big-text {
+  font-size: 32px;
+}
+
+.small-text {
+  font-size: 8px;
+}
+
+.biasa-jee {
+  font-size: 16px;
+}
+
+.tipis {
+font-weight: lighter;
+}
+
+.biasa {
+font-weight: normal;
+}
+
+.tebal {
+font-weight: bold;
+}
+
+.lebih-tebal {
+font-weight: bolder;
+}
+
+.angka {
+font-weight: 900;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: larger;
+  color: dodgerblue;
+}
+
+cite {
+   font-size: small;
+            font-style: normal;
+            color: fuchsia;
+}
+
+.font {
+  font-family: sans-serif;
+}
+
+.fontt {
+  font-family: serif;
+}
+
+.fonttt {
+  font-family: monospace;
+}
+
+.fontttt {
+  font-family: cursive;
+}
+
+.fonttttt {
+  font-family: fantasy;
+}
