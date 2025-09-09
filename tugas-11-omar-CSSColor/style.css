@@ -7,6 +7,7 @@ h1 {
     text-align: center;
     color: #ff0000;
     background-color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .Img {
     text-align: center;
@@ -15,6 +16,7 @@ h1 {
 }
 .Img img {
     display: inline-block;
+    border-radius: 30px;
 }
 .Paragraf {
     text-align: center;
@@ -24,17 +26,21 @@ h1 {
 h2 {
     color: #ff0000;
     text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .Kelebihan {
     color: #00ff00;
     text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 li {
     color: #ffffff;
     text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .Kekurangan {
     color: #ff0000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
 footer {
@@ -43,4 +49,10 @@ footer {
 }
 .Background {
     background-color: #000000;
+}
+a {
+    color: rgba(000, 175, 255, 0.5);
+}
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
