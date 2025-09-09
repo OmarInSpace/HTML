@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+h1 {
+    text-align: center;
+    color: #ff0000;
+    background-color: #000000;
+}
+.Img {
+    text-align: center;
+    padding-top: 50px;
+    background-color: #000000;
+}
+.Img img {
+    display: inline-block;
+}
+.Paragraf {
+    text-align: center;
+    color: rgb(099, 255, 050);
+    background-color: #000000;
+}
+h2 {
+    color: #ff0000;
+    text-align: center;
+}
+.Kelebihan {
+    color: #00ff00;
+    text-align: center;
+}
+li {
+    color: #ffffff;
+    text-align: center;
+}
+.Kekurangan {
+    color: #ff0000;
+    text-align: center;
+}
+footer {
+    color: white;
+    text-align: left;
+}
+.Background {
+    background-color: #000000;
+}
