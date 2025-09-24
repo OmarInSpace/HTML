@@ -1,0 +1,90 @@
+/* static */
+.container {
+    background: lightgreen;
+    width: 600px;
+    height: 150px;
+}
+
+.yellow-box {
+    display: inline-block;
+    margin: 10px;
+    background: yellow;
+    width: 100px;
+    height: 100px;
+}
+
+/* relative */
+.inline-block {
+    background: blue;
+    margin: 4px;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.relative {
+    position: relative;
+    top: 40px;
+}
+
+/* fixed */
+.text {
+    width: 500px;
+    margin-top: 50px;
+}
+
+.fixed {
+    position: fixed;
+    top: 390px;
+    width: 300px;
+    padding: 10px 20px;
+    background: #73ad21;
+}
+
+/* absolute */
+
+.small-square {
+    position: absolute;
+    right: 0px;
+    height: 80px;
+    width: 80px;
+    background: yellow;
+}
+
+.medium-square {
+    right: 0px;
+    height: 200px;
+    width: 300px;
+    background: red;
+    position: absolute;
+}
+
+.big-square {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: deepskyblue;
+}
+
+/* absolute */
+.sticky {
+    position: sticky;
+    top: 30px;
+    padding: 5px;
+    background: yellow;
+    border: 2px solid blue;
+}
+
+p.content {
+    height: 100vh;
+    width: 500px;
+}
+
+/* z-index */
+.zindex {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: -1;
+    background-color: red;
+}

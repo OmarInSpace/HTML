@@ -1,0 +1,85 @@
+h1 {
+  text-align: center;
+}
+img {
+  width: 300px;
+}
+.containers {
+  max-width: 800px;
+  text-align: center;
+  display: flex;
+  margin-left: 300px;
+}
+.containersatu {
+  border-radius: 20px;
+  border: 3px solid;
+  margin-right: 30px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.containerdua {
+  border-radius: 20px;
+  border: 3px solid;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  margin-right: 50px;
+}
+.imgmuller {
+  width: 70px;
+  border: 3px solid;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.containerss {
+  display: flex;
+  max-width: 800px;
+  text-align: center;
+  margin-left: 300px;
+}
+.containertiga {
+    border: 3px solid;
+    border-radius: 5px;
+}
+.mullerp {
+    max-width: 650px;
+      font-family:  'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+.imgmullers {
+    width: 88px;
+    border: 3px solid;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.containersss {
+    display: flex;
+    max-width: 800px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.containerempat {
+    border: 3px solid;
+    border-radius: 5px;
+}
+.mullerps {
+    max-width: 650px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 300;
+}
+.Star {
+    height: 60px;
+    width: 200px;
+}
+blockquote {
+    font-style: oblique;
+    text-align: center;
+    margin-top:90px;
+    font-size: 100px;
+    color: white;
+    background-color: black;
+}
+footer {
+    text-align: center;
+    font-size: 50px;
+}
