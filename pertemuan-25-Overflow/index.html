@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow</title>
+    <style>
+      .visible {
+        background-color: #ddd;
+        width: 200px;
+        height: 50px;
+        padding: 20px;
+        overflow: visible;
+      }
+      .hidden {
+        background-color: #ddd;
+        width: 200px;
+        height: 50px;
+        padding: 20px;
+        overflow: hidden;
+      }
+      .scroll {
+        background-color: #ddd;
+        width: 200px;
+        height: 50px;
+        padding: 20px;
+        overflow: scroll;
+      }
+      .auto {
+        background-color: #ddd;
+        width: 200px;
+        height: 50px;
+        padding: 20px;
+        overflow: auto;
+      }
+
+      .divxy {
+        background-color: coral;
+        width: 300px;
+        height: 65px;
+        border: 1px solid black;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="visible">HALONAMASAYAIBRAHIMOMAR</div>
+    <br>
+    <div class="hidden">HALONAMASAYAIBRAHIMOMAR</div>
+    <br>
+    <div class="scroll">
+      HALONAMASAYAIBRAHIMOMAR HALONAMASAYAIBRAHIMOMAR HALONAMASAYAIBRAHIMOMAR
+    </div>
+    <br>
+    <div class="auto">HALONAMASAYAIBRAHIMOMAR</div>
+
+    <h2>Overflow-x dan Overflow-y</h2>
+    <p>
+      Anda juga dapat mengubah overflow konten secara horizontal atau vertikal.
+    </p>
+    <p>
+      Overflow-x menentukan apa yang harus dilakukan dengan sisi kiri/kanan
+      konten.
+    </p>
+    <p>
+      Overflow-y menentukan apa yang harus dilakukan dengan sisi atas/bawah
+      konten.
+    </p>
+    <div class="divxy">
+      Anda dapat menggunakan properti overflow ketika Anda ingin memiliki
+      kontrol lebih baik atas tata letak. Properti overflow menentukan apa yang
+      terjadi jika konten meluap dari kotak elemen.
+    </div>
+  </body>
+</html>

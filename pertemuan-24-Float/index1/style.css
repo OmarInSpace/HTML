@@ -1,0 +1,68 @@
+img {
+  width: 150px;
+}
+.float-left {
+  float: left;
+}
+.float-right {
+  float: right;
+}
+.box1 {
+  float: left;
+  background-color: blue;
+  width: 200px;
+  height: 150px;
+}
+.box2 {
+  float: left;
+  background-color: greenyellow;
+  width: 200px;
+  height: 150px;
+}
+.box3 {
+  float: left;
+  background-color: brown;
+  width: 200px;
+  height: 150px;
+}
+.box4 {
+  float: right;
+  background-color: indigo;
+  width: 200px;
+  height: 150px;
+}
+.box5 {
+  float: right;
+  background-color: purple;
+  width: 200px;
+  height: 150px;
+}
+.box6 {
+  float: right;
+  background-color: pink;
+  width: 200px;
+  height: 150px;
+}
+div {
+    font-size: 50px;
+}
+.box6 {
+    clear: left;
+}
+.ele1 {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+.ele2 {
+    float: right;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

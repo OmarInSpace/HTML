@@ -1,0 +1,46 @@
+.container {
+  text-align: center;
+  color: #ffffff;
+  font-size: 40px;
+}
+.header {
+  height: 100px;
+  background-color: black;
+  padding-top: 30px;
+}
+.content {
+  width: 75%;
+  height: 250px;
+  background-color: aquamarine;
+  float: left;
+}
+.sidebar {
+    width: 25%;
+    height: 250px;
+    background-color: aqua;
+    float: right;
+    list-style-type: none;
+}
+.footer {
+    height: 50px;
+    background-color: grey;
+    clear: both;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: block;
+}
+a {
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: block;
+    color: black;
+    background-color: white;
+}
+a:hover {
+    background-color: black;
+    color: white;
+}

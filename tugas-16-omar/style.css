@@ -1,0 +1,92 @@
+header {
+  position: sticky;
+  top: 0;
+  background-color: #eae3e3;
+  display: flex;
+  justify-content: center;
+}
+/*Pembatas*/
+
+.card {
+  /* position: relative; */
+  margin-top: 30px;
+  max-width: 200px;
+  padding: 30px;
+  justify-self: center;
+  border: 1px black solid;
+  background-color: #eae3e3;
+  padding-bottom: 100px;
+  padding-right: 114px; 
+}
+
+.badge {
+  position: absolute;
+  top: 60px;
+  right: 457px;
+  margin-right: 0px;
+  background-color: red;
+  border: 2px solid black;
+  color: white;
+  padding: 3px;
+}
+img {
+  border: 1px solid black;
+}
+h2 {
+  text-align: center;
+  margin-left: 4px;
+  max-width: 200px;
+  position: relative;
+  right: 25px;
+}
+.tag {
+  position: relative;
+  top: 40px;
+  right: 83px;
+  border: 1px solid black;
+  margin-right: 80px;
+  margin-left: 80px;
+  margin-top: 2px;
+  max-height: 25px;
+  background-color: #b5b5b5;
+}
+.p2 {
+  text-align: center;
+  font-size: 17px;
+  font-weight: 100;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position: relative;
+  bottom: 14px;
+}
+
+.p3 {
+  top: 80px;
+  position: relative;
+  font-size: large;
+  font-family: 'Times New Roman', Times, serif;
+}
+/*Pembatas*/
+
+.z-index {
+  border: gray solid 2px;
+  position: relative;
+  padding-bottom: 270px;
+}
+
+.card1 {
+  background-color: aqua;
+  position: absolute;
+  height: 200px;
+  width: 230px;
+  border-radius: 5px;
+  left: 90px;
+}
+.card2 {
+  background-color: aquamarine;
+   position: absolute;
+  height: 200px;
+  width: 230px;
+  border-radius: 5px;
+  left: 0px;
+  top: 40px;
+}

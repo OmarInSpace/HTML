@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float</title>
+    <style>
+        ul.navigasi {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        ul.navigasi li {
+            float: left;
+        }
+        ul.navigasi li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        ul.navigasi li a:hover {
+            background-color: #111;
+        }
+        .container {
+            width: 100%;
+        }
+        .sidebar {
+            float: left;
+            width: 30%;
+            background-color: #8fe81a;
+        }
+        .content {
+            float: right;
+            width: 70%;
+            background-color: #1ff6bd;
+        }
+        .clearfix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <ul class="navigasi">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">ThankYou</a></li>
+    </ul>
+
+    <div class="container">
+        <div class="sidebar">Ini sidebar.</div>
+        <div class="content">Ini konten.</div>
+    </div>
+
+    <div class="container clearfix">
+        <!--Elemen2 disini!-->
+    </div>
+</body>
+</html>
