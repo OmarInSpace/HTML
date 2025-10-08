@@ -1,0 +1,31 @@
+header {
+  text-align: center;
+}
+ul.navigasi {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+ul.navigasi li {
+  float: left;
+}
+ul.navigasi li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.navigasi li a:hover {
+  background-color: white;
+  color: #333;
+}
+.container {
+  width: 100%;
+}
+img {
+    width: 160px;
+    float: right;
+}

@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: #1529bb;
+  color: aliceblue;
+  padding: 30px 30px;
+}
+header h1 {
+  text-align: center;
+}
+header h3 {
+  text-align: center;
+  font-size: 17px;
+  padding-top: 20px;
+  font-weight: 500;
+}
+body {
+  background-color: aqua;
+}
+.containerone {
+  background-color: white;
+  border: black solid 2px;
+  border-radius: 6px;
+  text-align: center;
+  padding-bottom: 20px;
+  margin-top: 50px;
+  display: inline-block;
+  margin-left: 388px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+img {
+  display: flex;
+  justify-self: center;
+  padding-top: 40px;
+  width: 150px;
+}
+h4 {
+  font-size: 25px;
+}
+p {
+  padding-top: 20px;
+  max-width: 400px;
+}
+.containertwo {
+  background-color: white;
+  margin-top: 20px;
+  border: black solid 2px;
+  border-radius: 6px;
+  max-width: 1200px;
+  margin-left: 330px;
+  width: 500px;
+  padding-right: 22px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+.htwo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.utwo {
+  font-size: 30px;
+}
+.containerthree {
+  background-color: white;
+  border: black solid 2px;
+  border-radius: 6px;
+  max-width: 1200px;
+  width: 700px;
+  margin-left: 245px;
+  padding-left: 25px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+.hthree {
+  text-align: center;
+}
+.uthree {
+  font-size: 30px;
+}
+footer {
+  background-color: #1529bb;
+  color: aliceblue;
+  padding: 30px 30px;
+  margin-top: 20px;
+}
+footer h1 {
+    text-align: center;
+    font-size: 20px;
+}

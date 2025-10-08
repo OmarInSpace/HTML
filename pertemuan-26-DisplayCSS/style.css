@@ -1,0 +1,29 @@
+.heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.subheading {
+    padding-left: 10px;
+}
+
+span.heading {
+    padding: 10px;
+    display: block;
+}
+span.subheading {
+    padding: 10px;
+    display: block;
+}
+.Image {
+    width: 200px;
+    float: right;
+    position: sticky;
+    top: 0;
+}
+img {
+    width: 200px;
+}
+#none {
+    display: none;
+}
