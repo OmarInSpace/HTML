@@ -1,0 +1,12 @@
+#hidden {
+    visibility: hdden;
+    height: 100px;
+    background-color: red;
+    float: right;
+}
+
+#none {
+    display: none;
+    background-color: blue;
+    height: 200px;
+}
