@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.Gap {
+  padding-bottom: 100px;
+  background-color: #f5fcff;
+  margin-top: 5px;
+}
+.Gap-2 {
+  padding-bottom: 100px;
+  background-color: #f5fcff;
+
+
+  /*Batas*/
+
+
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 0px 5px black;
+}
+.Logo {
+  width: 180px;
+  height: 39px;
+  margin-top: 19px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 29px;
+  gap: 30px;
+}
+.button1 {
+  padding: 10px;
+  height: 50px;
+  margin-left: 100px;
+  margin-top: 10px;
+  background-color: white;
+  color: #5e3bee;
+  border-color: #5e3bee;
+  border-radius: 5.33px;
+  margin-bottom: 10px;
+}
+.button1 a {
+  color: #5e3bee;
+}
+a {
+  text-decoration: none;
+  color: #1c1e53;
+}
+a:hover {
+  color: #1c1e53;
+}
+
+
+/*Batas*/
+
+
+.container2 {
+  display: block;
+  background-color: #f5fcff;
+}
+.p-2 {
+  font-weight: 550;
+  font-size: 15.33px;
+}
+.container-plus {
+  display: flex;
+}
+.container-plus1 {
+  margin-left: 150px;
+  margin-top: 50px;
+  padding: 20px;
+  max-width: 900px;
+}
+.container-plus1 p {
+  padding-bottom: 50px;
+  color: #282938;
+}
+.container-plus1 .p-2-2 {
+  color: #1c1e53;
+}
+.container-plus1 h2 {
+  padding-bottom: 20px;
+  font-size: 35.67px;
+  width: 400px;
+}
+.container-plus1 button {
+  background-color: #5e3bee;
+  color: #ffffff;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+.button-1 a {
+    color: #ffffff;
+}
+.button-1 a:hover {
+    color: #000000;
+}
+.container-plus2 img {
+  width: 400px;
+  float: right;
+  margin-left: 140px;
+  margin-right: 36px;
+  margin-top: 30px;
+}
+
+
+/*Batas*/
+
+
+.Gap-Left-Bottom {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.container3 {
+    margin-top: 149px;
+}
+.container3 p {
+    margin-bottom: 21px;
+    font-weight: 550;
+    font-size: 15.33px;
+    margin-left: 1px;
+}
+.container3 h2 {
+    padding-bottom: 20px;
+    font-size: 30.67px;
+    width: 400px;
+}
+.container-plus-2 {
+    display: flex;
+}
+.img-content {
+    width: 60.33px;
+    height: 60.33px;
+}
+/*Batas*/
+.container4 img {
+  width: 500px;
+}

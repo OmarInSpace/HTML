@@ -1,0 +1,151 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.header {
+  text-align: center;
+  background: #e0e0e0;
+  background: #a6a6a6;
+  background: radial-gradient(
+    circle,
+    rgba(166, 166, 166, 1) 0%,
+    rgba(92, 92, 92, 1) 100%
+  );
+  padding: 10px;
+}
+.header h1 {
+  color: white;
+  font-size: 60px;
+}
+
+.grup-1 {
+  margin-left: 240px;
+  margin-top: 90px;
+  display: inline-block;
+  border-bottom: 6px solid rgb(255, 59, 41);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  box-shadow: -4px 12px 30px -7px black;
+  max-height: 330px;
+}
+.head {
+  background-color: rgb(255, 59, 41);
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  padding: 15px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+.nav {
+  margin-top: 20px;
+}
+.nav li {
+  margin-top: 7px;
+  list-style-position: inside;
+  padding-right: 40px;
+  text-transform: capitalize;
+  padding-left: 15px;
+}
+.litwo {
+  background-color: rgb(230, 230, 230);
+  border-top: gray solid 1px;
+  border-bottom: gray solid 1px;
+  padding: 3px;
+  max-width: 160px;
+}
+
+.grup-2 {
+  margin-left: 20px;
+  margin-top: 90px;
+  display: inline-block;
+  border-bottom: 6px solid rgb(255, 234, 41);
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding-bottom: 53px;
+  box-shadow: -4px 12px 30px -7px black;
+  max-height: 330px;
+}
+.head-2 {
+  background-color: rgb(255, 234, 41);
+  text-align: center;
+  color: white;
+  text-transform: capitalize;
+  padding: 15px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.nav-2 {
+  margin-top: 39px;
+}
+.nav-2 li {
+  margin-top: 5px;
+  list-style-position: inside;
+  padding-right: 113px;
+  padding-left: 15px;
+}
+.circle-bg {
+    background-color: #e0e0e0;
+    border-top: solid rgb(224, 135, 0) 1px;
+    border-bottom: solid rgb(224, 135, 0) 1px;
+}
+.square {
+  list-style-type: square;
+  text-transform: uppercase;
+}
+.circle {
+  list-style-type: circle;
+  text-transform: uppercase;
+}
+.disc {
+  list-style-type: disc;
+  text-transform: capitalize;
+}
+
+
+
+.grup-3 {
+    margin-left: 20px;
+     display: block;
+     max-width: 250px;
+     margin-top: 90px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom: rgb(50, 163, 255) solid 6px;
+     box-shadow: -4px 12px 30px -7px black;
+     max-height: 330px;
+}
+.head-3 {
+    color: white;
+    background-color: rgb(50, 163, 255);
+    text-transform: capitalize;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    padding: 15px;
+}
+.nav-3 {
+    margin-top: 20px;
+    padding-left: 10px;
+}
+.one {
+    text-transform: uppercase;
+    color: red;
+    font-size: 12px;
+    font-weight: 800;
+}
+.two {
+    font-size: 10px;
+    margin-left: 44px;
+}
+.flex {
+    display: flex;
+}
