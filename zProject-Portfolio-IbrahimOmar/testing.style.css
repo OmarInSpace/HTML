@@ -1,0 +1,122 @@
+.btn-gerak {
+  background-color: #4caf50; /* warna hijau */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+
+  /* animasi halus */
+  transition: all 0.3s ease;
+}
+
+/* Saat diarahkan kursor (hover) */
+.btn-gerak:hover {
+  transform: translateY(-5px); /* tombol naik 5px */
+  background-color: #45a049;  /* warna agak lebih gelap */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+/* Saat ditekan (klik) */
+.btn-gerak:active {
+  transform: translateY(2px); /* sedikit turun saat diklik */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+
+.btn-geser {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+/* animasi isi tombol */
+.btn-geser span {
+  transition: transform 0.3s ease;
+}
+
+/* ikon di awal tersembunyi */
+.btn-geser .icon {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+/* saat di-hover: teks geser ke kiri, ikon muncul */
+.btn-geser:hover span:first-child {
+  transform: translateX(-6px);
+}
+
+.btn-geser:hover .icon {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.btn-geser:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+.btn-contact {
+  background-color: #111;           /* warna dasar hitam elegan */
+  color: #fff;                      /* warna teks putih */
+  padding: 12px 28px;
+  border: none;
+  border-radius: 50px;              /* bentuk agak bulat */
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;                        /* jarak antara teks dan ikon */
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.btn-contact:hover {
+  background-color: #222;
+  transform: translateY(-3px);       /* tombol agak naik */
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* teks & ikon di dalam tombol */
+.btn-contact span {
+  transition: all 0.3s ease;
+}
+
+/* ikon awalnya sedikit ke kiri dan transparan */
+.btn-contact .icon {
+  transform: translateX(-8px);
+  opacity: 0;
+}
+
+/* saat hover, teks geser dikit ke kiri, ikon muncul ke kanan */
+.btn-contact:hover span:first-child {
+  transform: translateX(-6px);
+}
+
+.btn-contact:hover .icon {
+  transform: translateX(0);
+  opacity: 1;
+}
+.pe {
+  /* max-width: 300px; */
+  overflow: scroll
+}

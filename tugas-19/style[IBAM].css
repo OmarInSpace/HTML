@@ -1,0 +1,30 @@
+.headerr {
+  display: flex;
+}
+.sidebar {
+  width: 150px;
+  overflow-y: auto;
+  max-height: 540px;
+  position: fixed;
+  background-color: black;
+}
+a:hover {
+    border: white solid 1px;
+    padding: 5px;
+}
+.sidebar li {
+  margin-bottom: 10px;
+  list-style-type: none;
+  list-style-position: inside;
+}
+a {
+  color: black;
+  text-decoration: none;
+   color: white;
+}
+a:hover {
+  color: #5e3bee;
+}
+.content {
+  margin-left: 160px;
+}
