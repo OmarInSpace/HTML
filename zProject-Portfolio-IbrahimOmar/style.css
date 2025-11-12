@@ -7,9 +7,9 @@ body {
   background-color: white;
 }
 .Gap {
-  padding-bottom: 30px;
+  padding-bottom: 35px;
   background-color: #f5fcff;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 .Gap-2 {
   padding-bottom: 75px;
@@ -21,6 +21,7 @@ body {
   display: flex;
   justify-content: center;
   box-shadow: 0px 0px 4px 0.1px black;
+  padding-bottom: 13px;
 }
 .parent-container-1 {
   display: flex;
@@ -80,21 +81,22 @@ ul {
 }
 .container-plus1 {
   margin-left: 100px;
-  margin-top: 50px;
+  margin-top: 35px;
   padding: 20px;
   max-width: 900px;
 }
 .container-plus1 p {
-  padding-bottom: 50px;
+  padding-bottom: 40px;
   color: #282938;
 }
 .container-plus1 .p-2-2 {
   color: #1c1e53;
-  max-width: 500px;
+  max-width: 420px;
+  font-size: medium;
 }
 .container-plus1 h2 {
-  padding-bottom: 20px;
-  font-size: 35.67px;
+  padding-bottom: 30px;
+  font-size: 41.67px;
   width: 400px;
 }
 .container-plus1 button {
@@ -120,6 +122,7 @@ ul {
   width: 500px;
   float: right;
   margin-top: 10px;
+  padding-left: 90px;
 }
 
 /*Batas*/
@@ -154,9 +157,10 @@ ul {
   transition: all 0.3s;
   border-top-left-radius: 10.67px;
   border-top-right-radius: 10.67px;
-  margin-left: 25px;
+  margin-left: 55px;
   max-width: 250px;
   padding: 12px;
+  margin-right: 20px;
   border-bottom-left-radius: 10.67px;
   border-bottom-right-radius: 10.67px;
 }
@@ -164,6 +168,9 @@ ul {
   transform: translateY(-10px);
   transition: all 0.3s;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 5px 0 0 #5e3bee;
+}
+.content1 p {
+  max-width: 220px;
 }
 .content1 h3 {
   padding-bottom: 30px;
@@ -178,11 +185,15 @@ ul {
   padding: 12px;
   border-bottom-left-radius: 10.67px;
   border-bottom-right-radius: 10.67px;
+  margin-right: 20px;
 }
 .content2:hover {
   transform: translateY(-10px);
   transition: all 0.3s;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 5px 0 0 #5e3bee;
+}
+.content2 p {
+  max-width: 220px;
 }
 .content2 h3 {
   padding-bottom: 30px;
@@ -197,6 +208,7 @@ ul {
   padding: 12px;
   border-bottom-left-radius: 10.67px;
   border-bottom-right-radius: 10.67px;
+  margin-right: 20px;
 }
 .content3:hover {
   transform: translateY(-10px);
@@ -205,6 +217,9 @@ ul {
 }
 .content3 h3 {
   padding-bottom: 30px;
+}
+.content3 p {
+  max-width: 220px;
 }
 .content4 {
   background-color: #f5fcff;
@@ -224,6 +239,9 @@ ul {
 }
 .content4 h3 {
   padding-bottom: 30px;
+}
+.content4 p {
+  max-width: 220px;
 }
 
 /*Batas*/
@@ -289,6 +307,12 @@ ul {
   background-color: #282938;
   color: #e62872;
   transition: all 0.3s;
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 2px 0px;
+}
+.button-container-5 button:active {
+  transform: translateY(0.3px);
+  box-shadow: none;
 }
 .button-container-5 img {
   padding-right: 10px;
@@ -336,7 +360,7 @@ ul {
   overflow: hidden;
 }
 .Link-2 {
- margin-top: 30px;
+  margin-top: 30px;
   border-bottom: #5e3bee solid 2px;
   max-width: 136px;
   margin-left: 20px;
@@ -405,7 +429,7 @@ ul {
 }
 /* ... */
 .card-2 {
- margin-top: 33px;
+  margin-top: 33px;
   width: 350px;
   margin-right: 20px;
   margin-left: 15px;
@@ -414,7 +438,7 @@ ul {
   padding-bottom: 30px;
 }
 .project2 h3 {
-   padding-top: 20px;
+  padding-top: 20px;
   padding-bottom: 40px;
   font-size: x-large;
   margin-left: 20px;
@@ -442,7 +466,7 @@ ul {
   padding-bottom: 30px;
 }
 .project3 h3 {
-   padding-top: 20px;
+  padding-top: 20px;
   padding-bottom: 40px;
   font-size: x-large;
   margin-left: 20px;
@@ -502,7 +526,8 @@ input {
   margin-top: 12px;
 }
 legend {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: medium;
   padding-bottom: 5px;
 }
@@ -553,7 +578,7 @@ select {
   margin-top: 22px;
   max-width: 509px;
   padding-left: 343px;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   display: block;
 }
 .form-6 input {
@@ -564,38 +589,119 @@ select {
   padding-right: 500px;
 }
 .checkbox1 {
-display: flex;
-align-items: flex-start;
-margin-bottom: 25px;
-margin-top: 25px;
-/* margin-right: 430px; */
-justify-content: start;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  /* margin-right: 430px; */
+  justify-content: start;
 }
 .checkbox1 input {
   max-width: 22px;
   margin-top: 2px;
 }
+.checkbox1 {
+  margin-left: 340px;
+}
 .acc {
- width: 140px;
- padding-left: 5px;
+  width: 140px;
+  padding-left: 5px;
 }
 .legend7 {
   font-size: smaller;
 }
-.button-submit {
-
-}
-.button-submit button {
+.button-submit-3 button {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   height: 37px;
   background-color: #5e3bee;
   color: white;
-  border: none;
-  border-radius: 6px
+  border: solid 2px #5e3bee;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+.button-submit-3 button:hover {
+  background-color: white;
+  color: #5e3bee;
+  transition: all 0.3s;
+  border: #5e3bee solid 2px;
 }
 /* .submit {
   padding: 5px;
   margin-left:0px;
 } */
+/* Batas */
+.container7 {
+  display: flex;
+  justify-content: left;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #F5FCFF;
+  margin-top: 70px;
+}
+.container7 a {
+  transition: all 0.3s;
+  color: #5e3bee;
+}
+.container7 a:hover {
+  transition: all 0.3s;
+  color: #5e3bee;
+}
+.container-last a {
+  transition: all 0.3s;
+  color: #5e3bee;
+}
+.container-last a:hover {
+  transition: all 0.3s;
+  color: #5e3bee;
+
+}
+.logo-img {
+  margin-left: 47px;
+  margin-top: 30px;
+}
+.logo {
+  width: 180px;
+  height: 40px;
+}
+.nav-2 {
+  justify-content: center;
+  padding-top: 5px;
+}
+.nav-2 li {
+  list-style-type: none;
+}
+.nav-2 a {
+  text-decoration: none;
+  color: black;
+}
+.img-nav {
+  margin-left: 200px;
+  margin-top: 27px;
+}
+.img-nav img {
+  width: 30px;
+  margin-right: 15px;
+}
+.nav-2-2 {
+ background-color: #F5FCFF;
+ margin-left: 310px;
+}
+.nav-2-2 li {
+  list-style-type: none;
+}
+.nav-2-2 a {
+  text-decoration: none;
+  color: black;
+}
+.Made-by {
+  margin-top: 25px;
+  margin-left: 50px;
+}
+.container-last {
+  background-color: #F5FCFF;
+  display: flex;
+  padding-bottom: 70px;
+  padding-top: 30px;
+}
