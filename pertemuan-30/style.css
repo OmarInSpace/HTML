@@ -1,0 +1,8 @@
+.jalan {
+    position: relative;
+    animation: 2s ease-in-out infinite alternate;
+}
+@keyframes {
+    from { left:0; opacity: 0.4;}
+    to { left: 120px; opacity: 1;}
+}

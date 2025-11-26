@@ -1,0 +1,67 @@
+@media screen and (max-width: 600px){
+    body {
+        flex-direction: column;
+    }
+}
+body {
+    display: flex;
+}
+/* Rotate */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: lightcoral;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box:hover {
+    transform: rotate(45deg);
+}
+
+/* Scale */
+.box-scale {
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box-scale:hover {
+    transform: scale(1.5)
+}
+
+/* Translate */
+.box-translate {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box-translate:hover {
+    transform: translate(50px, 50px);
+}
+
+/* Skew */
+.box-skew {
+    width: 100px;
+    height: 100px;
+    background-color: lightsalmon;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box-skew:hover {
+    transform: skewX(20deg);
+}
+
+/* Mix */
+.box-mix {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.box-mix:hover {
+    transform: rotate(10deg) scale(1.1) translateY(-10px) ;
+}
