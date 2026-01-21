@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.">
+    <script class="JavaScript Internal">
+        function greet() {
+            alert("Internal JavaScript");
+        }
+    </script>
+    <script src="script.js"></script>
+</head>
+<body>
+        <h1 id="judul">p</h1>
+        <button onclick="ubahJudul()">Klik untuk ubah judul</button>
+
+        <script>
+            function ubahJudul() {
+                document.getElementById("judul").innerHTML = "halo";
+            }
+        </script>
+    <!-- <script>
+        document.write ('ibam omar in the bus 77');
+    </script>
+    <h1>JavaScript Internal</h1>
+    <button onclick="greet()">Click Me</button>
+    <button onclick="greet2()">Click Me</button>
+    <button onclick="alert('Inline JavaScript')">Click Me</button>
+    <a href="javascript:alert('Protocol JavaScript')">Click Me</a> -->
+</body>
+</html>
