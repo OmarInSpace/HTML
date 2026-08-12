@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox Container</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
+      .container {
+        width: 800px;
+        border: 1px solid black;
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row; */
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: nowrap; */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+        justify-content: center;
+        /* justify-content: end; */
+        /* justify-content: space-between; */
+        /* justify-content: flex-start; */
+        /* justify-content: flex-end; */
+        align-items: center;
+
+        height: 600px;
+      }
+      .items {
+        width: 100px;
+        height: 100px;
+        background: red;
+        color: white;
+        margin: 10px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: red;
+        color: white;
+        margin-bottom: 40px;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+    li {
+        margin-right: 20px;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+      }
+      a:hover {
+        color: red;
+        background-color: white;
+        padding: 2px;
+        border-radius: 5px;
+      }
+      h1 {
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+        <h1>Nama</h1>
+        <ul>
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+            <li><a href="#">Link 5</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+      <div class="items">1</div>
+      <div class="items">2</div>
+      <div class="items">3</div>
+      <div class="items">4</div>
+      <div class="items">5</div>
+      <!-- <div class="items">6</div>
+      <div class="items">7</div>
+      <div class="items">8</div> -->
+    </div>
+  </body>
+</html>

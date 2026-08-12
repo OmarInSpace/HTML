@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premier League</title>
+    <style>
+      * {
+        margin: 0px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+      }
+      .section-p {
+        font-size: 15px;
+        max-width: 300px;
+        margin-left: 30px;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        margin-bottom: 40px;
+      }
+      h1 {
+        font-size: 25px;
+        max-width: 350px;
+        margin-top: 35px;
+        margin-left: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 28px;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(46, 9, 61);
+        color: white;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+      ul {
+        display: flex;
+        list-style: none;
+        margin-right: 80px;
+      }
+      li {
+        margin-right: 60px;
+        margin-top: 34px;
+      }
+      .active {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 20px;
+        padding: 8px;
+        transition: 0.4s;
+        border-radius: 18px;
+      }
+      .active:hover {
+        color: rgb(39, 0, 130);
+        background-color: rgb(190, 162, 255);
+        padding: 8px;
+        border-radius: 18px;
+        transition: 0.4s;
+      }
+      img {
+        width: 85px;
+        height: 85px;
+        margin-left: 60px;
+      }
+      .container-two {
+        background-color: rgb(5, 239, 255);
+        display: flex;
+        padding: 40px;
+        padding-top: 145px;
+        padding-bottom: 125px;
+      }
+      .epl-section {
+        width: 750px;
+        height: 400px;
+        margin: 20px;
+        border-radius: 20px;
+        border: 5px solid rgb(46, 9, 61);
+      }
+      .button-one {
+        border-radius: 25px;
+        border: 2px solid rgb(46, 9, 61);
+        padding: 15px 25px 15px 25px;
+        font-size: 17px;
+        font-weight: 500;
+        margin-left: 25px;
+        cursor: pointer;
+        background-color: rgb(46, 9, 61);
+        color: white;
+        transition: 0.4s;
+      }
+
+      .button-one:hover {
+        border-radius: 25px;
+        border: 2px solid rgb(46, 9, 61);
+        padding: 15px 25px 15px 25px;
+        font-size: 17px;
+        font-weight: 500;
+        margin-left: 25px;
+        cursor: pointer;
+        background-color: rgb(46, 9, 61);
+        color: white;
+        transition: 0.4s;
+        border: 2px solid rgb(46, 9, 61);
+        background-color: white;
+        color: rgb(46, 9, 61);
+      }
+      .container-three {
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(30, 0, 33);
+        padding-top: 180px;
+        padding-bottom: 140px;
+      }
+      .card-one {
+        background-color: rgb(48, 9, 51);
+        position: relative;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        color: white;
+        width: 300px;
+        height: 250px;
+        padding-bottom: 240px;
+        border-radius: 10px;
+        align-content: center;
+        margin-top: 20px;
+      }
+      .card-two {
+        background-color: rgb(48, 9, 51);
+        position: relative;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        color: white;
+        width: 450px;
+        height: 300px;
+        padding-bottom: 230px;
+        border-radius: 10px;
+        padding-top: 20px;
+        font-size: x-large;
+      }
+      .card-three {
+        background-color: rgb(48, 9, 51);
+        position: relative;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        color: white;
+        width: 300px;
+        height: 250px;
+        padding-bottom: 240px;
+        border-radius: 10px;
+        align-content: center;
+        margin-top: 20px;
+      }
+      .card-one img {
+        width: 65px;
+        height: 65px;
+        margin-left: 116px;
+        position: absolute;
+        top: -30px;
+      }
+      .card-two img {
+        width: 80px;
+        height: 80px;
+        margin-left: 188px;
+        position: absolute;
+        top: -30px;
+      }
+      .card-three img {
+        width: 65px;
+        height: 65px;
+        margin-left: 122px;
+        position: absolute;
+        top: -30px;
+      }
+      .card-one h3 {
+        width: auto;
+        margin-left: 63px;
+        padding-top: 35px;
+      }
+      .card-two h3 {
+        width: auto;
+        height: 65px;
+        margin-left: 175px;
+        padding-top: 65px;
+      }
+      .card-three h3 {
+        width: auto;
+        margin-left: 110px;
+        padding-top: 30px;
+      }
+      .card-one p {
+        width: auto;
+        max-width: 250px;
+        height: 65px;
+        margin-left: 25px;
+        padding-top: 45px;
+        font-size: large;
+      }
+      .card-two p {
+        width: auto;
+        max-width: 150px;
+        margin-left: 25px;
+        font-size: 20px;
+        max-width: 400px;
+      }
+      .card-three p {
+        width: auto;
+        max-width: 250px;
+        height: 65px;
+        margin-left: 25px;
+        padding-top: 45px;
+        font-size: large;
+      }
+      .button-card-one {
+        margin-top: 35px;
+        padding: 15px 13px 15px 13px;
+        background-color: #4a1154;
+        border: hidden;
+        border-radius: 20px;
+        margin-left: 68px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .button-card-two {
+        margin-top: 60px;
+        padding: 17px 15px 17px 15px;
+        background-color: #4a1154;
+        border: hidden;
+        border-radius: 20px;
+        margin-left: 144px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .button-card-three {
+        margin-top: 60px;
+        padding: 15px 13px 15px 13px;
+        background-color: #4a1154;
+        border: hidden;
+        border-radius: 20px;
+        margin-left: 68px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .button-card-one a {
+        text-decoration: none;
+        color: white;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 15px;
+      }
+      .button-card-two a {
+        text-decoration: none;
+        color: white;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 15px;
+      }
+      .button-card-three a {
+        text-decoration: none;
+        color: white;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+        font-size: 15px;
+      }
+      .button-card-one:hover {
+        margin-top: 35px;
+        padding: 15px 13px 15px 13px;
+        background-color: #a92ebe;
+        border: hidden;
+        border-radius: 20px;
+        margin-left: 68px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .button-card-two:hover {
+        margin-top: 60px;
+        padding: 17px 15px 17px 15px;
+        background-color: #a92ebe;
+        border: hidden;
+        border-radius: 20px;
+        margin-left: 144px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .button-card-three:hover {
+        margin-top: 60px;
+        padding: 15px 13px 15px 13px;
+        background-color: #a92ebe;
+        border: hidden;
+        border-radius: 20px;
+        margin-left: 68px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      footer {
+        background-color: rgb(46, 9, 61);
+        padding: 20px;
+        color: white;
+        font-family:
+          "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+          Arial, sans-serif;
+        font-size: smaller;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="#" class="image"
+          ><img src="../img/images (5).jpg" alt="Logo"
+        /></a>
+        <ul>
+          <li><a class="active" href="#">Home</a></li>
+          <li><a class="active" href="#team">Teams</a></li>
+          <li><a class="active" href="#">Matches</a></li>
+          <li><a class="active" href="#">Standings</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container-two">
+      <div class="child">
+        <h1>
+          Welcome to
+          <span
+            style="
+              font-size: 60px;
+              color: rgb(55, 0, 60);
+              font-family:
+                &quot;Segoe UI&quot;, Tahoma, Geneva, Verdana, sans-serif;
+            "
+            >Premier League
+          </span>
+        </h1>
+        <p class="section-p">
+          PremierLeagueCentral is the ultimate digital hub for the world's most
+          competitive football league. It delivers real-time match data, expert
+          tactical analysis, and breaking transfer news.
+        </p>
+        <button class="button-one">See More</button>
+      </div>
+      <img class="epl-section" src="../img/epl.webp" alt="EPL" />
+    </div>
+    <div class="container-three" id="team">
+      <div class="card-one">
+        <img src="../img/manutdclub.png" alt="mu" />
+        <div>
+          <h3>Manchester United</h3>
+          <p>
+            Manchester United Football Club—popularly nicknamed The Red
+            Devils—is one of the most successful, historic, and widely supported
+            professional soccer teams in global sports history. Based at the
+            iconic Old Trafford stadium in Greater Manchester, England, the club
+            competes at the highest level in the English Premier League. <br />
+            <button class="button-card-one"><a href="#">Learn More</a></button>
+          </p>
+        </div>
+      </div>
+
+      <div class="card-two">
+        <img src="../img/arsendal.png" alt="arsendal" />
+        <div>
+          <h3>Arsenal</h3>
+          <p>
+            Arsenal Football Club—universally known as The Gunners—is a
+            cornerstone of English football, representing one of the most
+            culturally significant and historically decorated institutions in
+            world sport. Based in Holloway, North London, the club is globally
+            revered for its commitment to progressive, fluid attacking football,
+            an elite youth academy system, and a pioneering role in the modern
+            commercialization of the game. <br />
+            <button class="button-card-two"><a href="#">Learn More</a></button>
+          </p>
+        </div>
+      </div>
+
+      <div class="card-three">
+        <img src="../img/ipul.png" alt="liverpool" />
+        <div>
+          <h3>Liverpool</h3>
+          <p>
+            Liverpool Football Club—universally recognized by their nickname The
+            Reds—is one of the most historic, trophy-laden, and widely supported
+            powerhouses in global football history. Operating out of their
+            world-famous stadium, Anfield, the club competes at the absolute
+            pinnacle of the English Premier League.
+            <br />
+            <button class="button-card-three">
+              <a href="#">Learn More</a>
+            </button>
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="pe">&copy; PREMIER LEAGUE 2026</p>
+    </footer>
+  </body>
+</html>

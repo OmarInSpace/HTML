@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPL Central 2025/26 - Live Stats</title>
+    <script src="https://tailwindcss.com"></script>
+    <link href="https://cloudflare.com" rel="stylesheet">
+    <style>
+        @import url('https://googleapis.com');
+        body { font-family: 'Poppins', sans-serif; background-color: #f3f4f6; }
+        .epl-gradient { background: linear-gradient(135deg, #3d195d 0%, #37003c 100%); }
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="epl-gradient text-white py-6 shadow-xl">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <h1 class="text-3xl font-black italic tracking-tighter">PREMIER<span class="text-cyan-400">LEAGUE</span></h1>
+            <div class="text-sm font-bold bg-white/10 px-4 py-2 rounded-full border border-white/20">
+                MUSIM 2025/26 | APRIL
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="container mx-auto flex justify-around">
+            <button onclick="openTab(event, 'standings')" class="tab-link py-4 px-6 border-b-2 border-transparent hover:text-purple-700 font-bold active-tab border-purple-700 text-purple-700">KLASEMEN</button>
+            <button onclick="openTab(event, 'fixtures')" class="tab-link py-4 px-6 border-b-2 border-transparent hover:text-purple-700 font-bold">JADWAL</button>
+            <button onclick="openTab(event, 'topscorers')" class="tab-link py-4 px-6 border-b-2 border-transparent hover:text-purple-700 font-bold">TOP SKOR</button>
+        </div>
+    </nav>
+
+    <main class="container mx-auto px-6 py-8">
+
+        <!-- Tab: Klasemen -->
+        <section id="standings" class="tab-content active">
+            <div class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-100">
+                <table class="w-full text-left">
+                    <thead class="bg-gray-50 border-b border-gray-100">
+                        <tr class="text-gray-500 text-xs font-bold uppercase tracking-wider">
+                            <th class="px-6 py-4">Pos</th>
+                            <th class="px-6 py-4">Klub</th>
+                            <th class="px-6 py-4 text-center">Main</th>
+                            <th class="px-6 py-4 text-center">Poin</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm font-semibold">
+                        <!-- Liverpool memimpin liga (Fakta: Juara sudah dipastikan di Mei 2025 namun data April 2026 menunjukkan performa stabil) -->
+                        <tr class="border-b border-gray-50 hover:bg-purple-50 transition">
+                            <td class="px-6 py-4 text-blue-600 font-bold">1</td>
+                            <td class="px-6 py-4 flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span> Liverpool FC</td>
+                            <td class="px-6 py-4 text-center text-gray-500">34</td>
+                            <td class="px-6 py-4 text-center font-bold text-purple-900">82</td>
+                        </tr>
+                        <tr class="border-b border-gray-50 hover:bg-purple-50 transition">
+                            <td class="px-6 py-4">2</td>
+                            <td class="px-6 py-4 flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span> Manchester City</td>
+                            <td class="px-6 py-4 text-center text-gray-500">34</td>
+                            <td class="px-6 py-4 text-center font-bold">78</td>
+                        </tr>
+                        <tr class="border-b border-gray-50 hover:bg-purple-50 transition">
+                            <td class="px-6 py-4">3</td>
+                            <td class="px-6 py-4 flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span> Arsenal</td>
+                            <td class="px-6 py-4 text-center text-gray-500">34</td>
+                            <td class="px-6 py-4 text-center font-bold">75</td>
+                        </tr>
+                        <tr class="border-b border-gray-50 hover:bg-purple-50 transition">
+                            <td class="px-6 py-4">4</td>
+                            <td class="px-6 py-4 flex items-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-3"></span> Chelsea</td>
+                            <td class="px-6 py-4 text-center text-gray-500">34</td>
+                            <td class="px-6 py-4 text-center font-bold">68</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-xs text-gray-400 mt-4 italic">*Data simulasi berdasarkan tren April 2026. 4 Teratas lolos ke Champions League.</p>
+        </section>
+
+        <!-- Tab: Jadwal -->
+        <section id="fixtures" class="tab-content">
+            <h3 class="text-xl font-bold mb-6 text-purple-900">Pertandingan Pekan 35 (Mei 2026)</h3>
+            <div class="grid gap-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-cyan-400 flex justify-between items-center">
+                    <div class="text-right w-1/3 font-bold">Arsenal</div>
+                    <div class="text-center w-1/3">
+                        <span class="bg-gray-100 px-3 py-1 rounded text-xs font-bold">02 MEI</span>
+                        <div class="text-xl font-black mt-1 text-purple-800">VS</div>
+                    </div>
+                    <div class="text-left w-1/3 font-bold">Fulham</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-red-500 flex justify-between items-center">
+                    <div class="text-right w-1/3 font-bold">Man United</div>
+                    <div class="text-center w-1/3">
+                        <span class="bg-gray-100 px-3 py-1 rounded text-xs font-bold">03 MEI</span>
+                        <div class="text-xl font-black mt-1 text-purple-800">VS</div>
+                    </div>
+                    <div class="text-left w-1/3 font-bold">Liverpool</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tab: Top Scorers -->
+        <section id="topscorers" class="tab-content">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center">
+                    <div class="text-4xl font-black text-purple-700 mb-2">29</div>
+                    <div class="font-bold text-lg uppercase">Mohamed Salah</div>
+                    <div class="text-xs text-gray-400 font-bold">LIVERPOOL</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center">
+                    <div class="text-4xl font-black text-gray-800 mb-2">23</div>
+                    <div class="font-bold text-lg uppercase">Alexander Isak</div>
+                    <div class="text-xs text-gray-400 font-bold">NEWCASTLE</div>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm text-center">
+                    <div class="text-4xl font-black text-gray-800 mb-2">22</div>
+                    <div class="font-bold text-lg uppercase">Erling Haaland</div>
+                    <div class="text-xs text-gray-400 font-bold">MAN CITY</div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("border-purple-700", "text-purple-700");
+                tablinks[i].classList.add("border-transparent");
+            }
+            document.getElementById(tabName).classList.add("active");
+            evt.currentTarget.classList.remove("border-transparent");
+            evt.currentTarget.classList.add("border-purple-700", "text-purple-700");
+        }
+    </script>
+</body>
+</html>

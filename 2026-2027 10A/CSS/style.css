@@ -1,0 +1,37 @@
+h2 {
+  color: red;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+.pe {
+  color: blue;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+#ibam {
+  color: aqua;
+}
+input[type="date"] {
+  color: brown;
+  font-size: x-large;
+  padding: 20px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  border-radius: 20px;
+}
+button {
+  color: rgb(223, 35, 35);
+  font-size: large;
+  padding: 15px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 10px;
+  border: none;
+}
+button:hover {
+  background-color: rgb(223, 35, 35);
+  color: white;
+  transition: all 0.3s;
+  transition-delay: 0.1s;
+}
+

@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Slice</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* * {
+            margin: 0px;
+            padding: 0px;
+        } */
+      body {
+        margin: 0px;
+        padding: 0px;
+        height: auto;
+        background-color: #161513;
+      }
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1264.6px;
+        height: 82.18px;
+        margin-bottom: 97.82;
+        background-color: #1e1e1d;
+      }
+      ul {
+        display: flex;
+      }
+      li {
+        list-style: none;
+        margin-right: 40px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      nav img {
+        margin-left: 30px;
+        width: 70px;
+        height: 85px;
+      }
+
+      section {
+        background-color: #161513;
+        text-align: center;
+        padding-top: 95px;
+        padding-bottom: 95px;
+      }
+      section img {
+        margin-bottom: 41px;
+        width: 213px;
+        height: 213px;
+      }
+      section h1 {
+        font-size: 55px;
+        max-width: auto;
+        color: white;
+        font-family: "Poppins", sans-serif;
+        margin: auto;
+        margin-bottom: 39px;
+      }
+      section span {
+        background: #ff8660;
+        background: linear-gradient(
+          140deg,
+          rgba(255, 134, 96, 1) 21%,
+          rgba(154, 51, 255, 1) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      section p {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        max-width: auto;
+        height: 108px;
+        color: #c5c5c5;
+        font-weight: 300;
+        font-style: light;
+        font-size: 18px;
+        margin-bottom: 54px;
+      }
+      .btn-touch {
+        padding: 15px 40px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        border: 2px solid #ffffff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: medium;
+        margin-right: 18px;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .btn-download {
+        padding: 15px 30px;
+        background-color: #161513;
+        border-radius: 50px;
+        border: 2px solid #ffffff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: medium;
+        color: white;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .btn-touch:hover {
+        padding: 15px 40px;
+        background-color: #161513;
+        border-radius: 50px;
+        border: 2px solid #ffffff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: medium;
+        margin-right: 18px;
+        color: white;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+      .btn-download:hover {
+        padding: 15px 30px;
+        background-color: #ffffff;
+        border-radius: 50px;
+        border: 2px solid #ffffff;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: medium;
+        color: #161513;
+        transition: 0.4s;
+        cursor: pointer;
+      }
+
+      main {
+        background-color: #161513;
+      }
+      .experience {
+        text-align: center;
+        padding-top: 95px;
+        padding-bottom: 95px;
+      }
+      .experience h3 {
+        color: #c5c5c5;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        font-size: 30px;
+        letter-spacing: 18%;
+        margin-bottom: 52px;
+      }
+      .experience img {
+        width: 42px;
+        height: 42px;
+        margin-right: 35px;
+        margin-left: 35px;
+        margin-bottom: 99px;
+      }
+
+      .project {
+        background-color: #161513;
+        text-align: center;
+      }
+      .project h1 {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-size: 55px;
+        background: #ff8660;
+        background: linear-gradient(
+          167deg,
+          rgba(255, 134, 96, 1) 21%,
+          rgba(213, 73, 29, 1) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+      }
+      .flex-container img {
+        width: 370px;
+        height: 235px;
+      }
+      .container {
+        text-align: left;
+        background-color: #2A2A2A;;
+        border-radius: 17px;
+        padding-bottom: 20px;
+      }
+      .container h3 {
+        color: #C5C5C5;
+        font-family: "Poppins", sans-serif;
+        font-size: 13px;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-left: 15px;
+        line-height: 0px;
+        margin-top: 28px;
+      }
+      .container h2 {
+        font-size: 19px;
+        font-weight: 800;
+        font-family: "Poppins", sans-serif;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-left: 15px;
+        line-height: 0px;
+        margin-top: 28px;
+      }
+      .arrow {
+        font-weight: bolder;
+        font-size: x-large;
+        color: white;
+        text-align: right;
+        margin-right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="../img/logo (7).png" alt="logo" />
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Experience</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+    <section>
+      <img src="../img/Avatar.png" alt="profile" />
+      <h1>
+        i do code and <br />
+        make content <span>about it!</span>
+      </h1>
+      <p>
+        I am a seasoned full-stack software engineer with over <br />
+        8 years of professional experience, specializing in backend development.
+        <br />
+        My expertise lies in crafting robust and scalable SaaS-based <br />
+        architectures on the Amazon AWS platform.
+      </p>
+      <div class="button">
+        <button class="btn-touch">Get In Touch</button
+        ><button class="btn-download">Doawnload CV</button>
+      </div>
+    </section>
+
+    <main>
+      <div class="experience">
+        <h3>Experience With</h3>
+        <img src="../img/javascript.png" alt="javascript" />
+        <img src="../img/nodejs.png" alt="nodejs" />
+        <img src="../img/html.png" alt="html" />
+        <img src="../img/css.png" alt="css" />
+        <img src="../img/reactjs.png" alt="reactjs" />
+      </div>
+
+      <div class="project">
+
+        <h1>Projects</h1>
+        <div class="flex-container">
+          <div class="container">
+            <img src="../img/project-thumbnail-1.png" alt="html" />
+            <h3>Click here to visit</h3>
+            <h2>Html tutorial</h2>
+            <p class="arrow">&nearr;</p>
+          </div>
+          <div class="container">
+            <img src="../img/project-thumbnail-2.png" alt="css" />
+            <h3>Click here to visit</h3>
+            <h2>CSS tutorial</h2>
+            <p class="arrow">&nearr;</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <div>
+        <h1>Experience</h1>
+        <div>
+          <img src="" alt="Google" />
+          <p>Nov 2019 - Present</p>
+          <p>
+            As a Senior Software Engineer at Google, I played a pivotal role in
+            developing innovative solutions for Google's core search algorithms.
+            Collaborating with a dynamic team of engineers, I contributed to the
+            enhancement of search accuracy and efficiency, optimizing user
+            experiences for millions of users worldwide.
+          </p>
+        </div>
+
+        <div>
+          <img src="" alt="Apple" />
+          <p>Jan 2016 - Dec 2017</p>
+          <p>
+            During my tenure at Apple, I held the role of Software Architect,
+            where I played a key role in shaping the architecture of
+            mission-critical software projects. Responsible for designing
+            scalable and efficient systems, I provided technical leadership to a
+            cross-functional team.
+          </p>
+        </div>
+
+        <div>
+          <img src="" alt="Meta" />
+          <p>Jan 2017 - Oct 2019</p>
+          <p>
+            At Meta, I served as a Software Engineer, focusing on the design and
+            implementation of backend systems for the social media giant's
+            dynamic platform. Working on projects that involved large-scale data
+            processing and user engagement features, I leveraged my expertise to
+            ensure seamless functionality and scalability.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <h1>Contact</h1>
+      <p>
+        Seasoned Full Stack Software Engineer with over 8 years of hands-on
+        experience in designing and implementing robust, scalable, and
+        innovative web solutions. Adept at leveraging a comprehensive skill set
+        encompassing front-end and back-end technologies
+      </p>
+      <p><img src="" alt="mail" /> abmcodehub@gmail.com</p>
+      <img src="" alt="ig" />
+      <img src="" alt="x" />
+      <img src="" alt="yt" />
+    </footer>
+  </body>
+</html>
