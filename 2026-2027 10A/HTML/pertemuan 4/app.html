@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100px;
+        background-color: black;
+      }
+      nav ul {
+        display: none;
+        gap: 20px;
+        color: white;
+      }
+      ul li {
+        list-style: none;
+        color: white; 
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      header button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      header h1 {
+        color: white;
+      }
+      section {
+        padding: 20px;
+        /* display: flex;
+        flex-direction: column;
+        justify-content: center; */
+      }
+      section h1 {
+        font-size: 30px;
+        color: blue;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      section p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .container-card {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+      .card {
+        border: 10px solid #ccc;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+        width: 300px;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      .card button {
+        background-color: blue;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      @media screen and (min-width: 1000px) {
+        .container-card {
+          flex-direction: row;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to ME</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <button>
+        <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255)"></i>
+      </button>
+    </header>
+    <section>
+      <h1>Responsive Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus,
+        nulla!
+      </p>
+      <div class="container-card">
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6BB6z2wVi5yHyW-ZQejuOmZAPpsxmOALVA_i8JAScYA&s=10"
+            alt="Gambar"
+          />
+          <h2>Title card</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+            id.
+          </p>
+          <button>Click Me</button>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6BB6z2wVi5yHyW-ZQejuOmZAPpsxmOALVA_i8JAScYA&s=10"
+            alt="Gambar"
+          />
+          <h2>Title card</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+            id.
+          </p>
+          <button>Click Me</button>
+        </div>
+        <div class="card">
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6BB6z2wVi5yHyW-ZQejuOmZAPpsxmOALVA_i8JAScYA&s=10"
+            alt="Gambar"
+          />
+          <h2>Title card</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque,
+            id.
+          </p>
+          <button>Click Me</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

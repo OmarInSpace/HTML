@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@import url('https://googleapis.com');
+
+
+@theme {
+    --font-poppins: 'Poppins', sans-serif;
+}
+@theme {
+  --font-archivo: 'Archivo Black', sans-serif;
+}
+

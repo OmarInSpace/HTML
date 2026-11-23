@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@import url('https://googleapis.com');
+
+
+@theme {
+  --font-barlow: 'Barlow Condensed', sans-serif;
+}
+
+@theme {
+  --font-space: 'Space Grotesk', sans-serif;
+}

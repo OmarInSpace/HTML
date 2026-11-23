@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind CSS via Tailwind CLI</title>
+    <link rel="icon" type="image/icon-tailwind" href="img/tailwind.jpg" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body class="dark:bg-black dark:text-white">
+    <!-- <h1 class="bg-blue-700 text-rose-50 p-10 rounded-3xl text-center">
+      Hello, Tailwind CSS!
+    </h1> -->
+
+    <!-- container card -->
+    <!-- <div
+      class="flex flex-col gap-5 justify-center items-center mt-10 sm:flex-row sm:gap-10 sm:items-center sm:justify-center"
+    > -->
+    <!-- card -->
+    <!-- <div class="w-[300px] bg-amber-300 p-5 text-center rounded-2xl shadow-lg">
+        <img src="img/adidas-samba-manchester-united-2.jpg" />
+        <h1 class="mb-3 font-bold text-2xl text-amber-100">title card</h1>
+        <p class="text-amber-50 mb-5">description card</p>
+        <button
+          class="bg-amber-600 text-amber-100 hover:bg-amber-100 hover:text-amber-500 p-2 rounded-lg transition-all duration-200"
+        >
+          Click me
+        </button>
+      </div>
+      <div class="w-[300px] bg-amber-300 p-5 text-center rounded-2xl shadow-lg">
+        <img src="img/adidas-samba-manchester-united-2.jpg" />
+        <h1 class="mb-3 font-bold text-2xl text-amber-100">title card</h1>
+        <p class="text-amber-50 mb-5">description card</p>
+        <button
+          class="bg-amber-600 text-amber-100 hover:bg-amber-100 hover:text-amber-500 p-2 rounded-lg transition-all duration-200"
+        >
+          Click me
+        </button>
+      </div>
+      <div class="w-[300px] bg-amber-300 p-5 text-center rounded-2xl shadow-lg">
+        <img
+          src="img/adidas-samba-manchester-united-2.jpg"
+          alt="Adidas Samba"
+        />
+        <h1 class="mb-3 font-bold text-2xl text-amber-100">title card</h1>
+        <p class="text-amber-50 mb-5">description card</p>
+        <button
+          class="bg-amber-600 text-amber-100 hover:bg-amber-100 hover:text-amber-500 p-2 rounded-lg transition-all duration-200"
+        >
+          Click me
+        </button>
+      </div>
+    </div> -->
+    <nav class="flex flex-row justify-center pt-5 pb-5 sticky top-0 z-10">
+      <ul
+        class="flex gap-10 font-medium text-lg p-[15px] rounded-2xl bg-amber-500 max-w-100"
+      >
+        <li><a href="#" class="text-white hover:text-amber-600">Home</a></li>
+        <li><a href="#" class="text-white hover:text-amber-600">About</a></li>
+        <li>
+          <a href="#" class="text-white hover:text-amber-600">Services</a>
+        </li>
+        <li><a href="#" class="text-white hover:text-amber-600">Contact</a></li>
+      </ul>
+    </nav>
+    <section
+      class="p-10 flex flex-col-reverse md:flex-row h-screen justify-center items-center gap-10 bg-red-600"
+    >
+      <div class="flex flex-col gap-3 items-start">
+        <h2 class="text-xl text-white font-bold capitalize">hello friend</h2>
+        <h1 class="text-4xl capitalize md:text-6xl text-white font-bold">
+          i'm <span class="text-yellow-300 uppercase">baleba</span>
+        </h1>
+        <h2 class="text-lg text-white capitalize pb-[10px]">
+          AMF || CMF || DMF
+        </h2>
+        <p class="text-gray-200 text-sm max-w-80 pb-[30px]">
+          Halo semuanya! Saya Carlos Baleba. Saya lahir di Douala, Kamerun, dan
+          sepak bola sudah menjadi bagian dari hidup saya sejak kecil. Saat ini,
+          saya bangga bisa bermain sebagai gelandang untuk Brighton & Hove
+          Albion di Premier League, serta mewakili negara tercinta saya, Tim
+          Nasional Kamerun.
+        </p>
+        <button
+          class="bg-red-500 border-3 border-red-500 text-white hover:bg-red-600  p-2 font-bold rounded-lg transition duration-300 ease-in-out mb-3 cursor-pointer"
+        >
+          Contact Me
+        </button>
+      </div>
+      <div>
+        <img
+          src="img/baleba.jpg"
+          alt="baleba"
+          class="mb-5 rounded-4xl shadow-xl border-red-500 border-4 w-[400px] h-[300px] object-cover animate-matrix-trip "
+        />
+      </div>
+    </section>
+
+    <section
+      class="p-10 pt-83 pb-93 flex flex-col h-screen justify-center items-center bg-blue-700 gap-10 md:flex-row-reverse"
+    >
+      <div class="pt-20 md:pt-0">
+        <img
+          src="img/images.jpg"
+          alt="face"
+          class="w-[250px] h-[300px] rounded-4xl border-2 border-white animate-wiggle"
+        />
+      </div>
+      <div class="flex flex-start flex-col gap-5 text-white md:pt-25">
+        <h2 class="text-3xl capitalize font-bold">about me</h2>
+        <p class="text-sm pb-2 max-w-220 md:max-w-120">
+          Halo semuanya, saya
+          <span class="text-xl text-yellow-300">N'Golo Kanté</span>. Saya adalah
+          seorang pemain sepak bola yang selalu berusaha memberikan yang terbaik
+          di lini tengah untuk membantu tim saya menang. Bagi saya, sepak bola
+          adalah tentang kerja keras bersama, berlari demi teman satu tim, dan
+          memastikan pertahanan kita aman. Saya sangat bersyukur atas semua
+          trofi yang telah saya menangkan bersama Leicester, Chelsea,
+          Al-Ittihad, dan Timnas Prancis. Namun yang paling penting bagi saya
+          adalah tetap bekerja keras dan menghormati semua orang, baik di dalam
+          maupun di luar lapangan.
+        </p>
+        <div class="flex gap-5 pb-20">
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-behance"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="p-10 pt-83 pb-83 flex flex-col h-screen justify-center items-center bg-red-600 gap-10 md:flex-row"
+    >
+      <div class="pt-20 md:pt-0">
+        <img
+          src="img/rashford.jpg"
+          alt="face"
+          class="w-[350px] h-[250px] rounded-4xl border-2 border-white animate-wiggle"
+        />
+      </div>
+      <div class="flex flex-start flex-col gap-5 text-white md:pt-25">
+        <h2 class="text-3xl capitalize font-bold">about me</h2>
+        <p class="text-sm pb-2 max-w-100 md:max-w-120">
+          Halo semua, saya
+          <span class="text-xl text-yellow-300">Marcus Rashford</span>. Bagi
+          kebanyakan dari kalian, mungkin kalian mengenal saya sebagai penyerang
+          nomor 9 di Manchester United atau nomor 10 saat mengenakan jersey tim
+          nasional Inggris. Lahir dan besar di Wythenshawe, Manchester Selatan,
+          bermain untuk klub kota kelahiran saya adalah mimpi yang menjadi
+          kenyataan sejak saya berusia tujuh tahun.
+        </p>
+        <div class="flex gap-5 pb-20">
+          <a href="" class="text-white hover:text-red-300 text-xl"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="" class="text-white hover:text-red-300 text-xl"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="" class="text-white hover:text-red-300 text-xl"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="" class="text-white hover:text-red-300 text-xl"
+            ><i class="fa fa-behance"></i
+          ></a>
+        </div>
+      </div>
+      <!-- <div class="absolute top-11 right-0 bg-red-600 -z-10 w-full h-full"></div> -->
+    </section>
+
+        <section
+      class="p-10 pt-83 pb-93 flex flex-col h-screen justify-center items-center bg-blue-700 gap-10 md:flex-row-reverse"
+    >
+      <div class="pt-20 md:pt-0">
+        <img
+          src="img/images.jpg"
+          alt="face"
+          class="w-[250px] h-[300px] rounded-4xl border-2 border-white animate-neon-pulse"
+        />
+      </div>
+      <div class="flex flex-start flex-col gap-5 text-white md:pt-25">
+        <h2 class="text-3xl capitalize font-bold">about me</h2>
+        <p class="text-sm pb-2 max-w-220 md:max-w-120">
+          Halo semuanya, saya
+          <span class="text-xl text-yellow-300">N'Golo Kanté</span>. Saya adalah
+          seorang pemain sepak bola yang selalu berusaha memberikan yang terbaik
+          di lini tengah untuk membantu tim saya menang. Bagi saya, sepak bola
+          adalah tentang kerja keras bersama, berlari demi teman satu tim, dan
+          memastikan pertahanan kita aman. Saya sangat bersyukur atas semua
+          trofi yang telah saya menangkan bersama Leicester, Chelsea,
+          Al-Ittihad, dan Timnas Prancis. Namun yang paling penting bagi saya
+          adalah tetap bekerja keras dan menghormati semua orang, baik di dalam
+          maupun di luar lapangan.
+        </p>
+        <div class="flex gap-5 pb-20">
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-behance"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="p-10 pt-83 pb-83 flex flex-col h-screen justify-center items-center bg-red-600 gap-10 md:flex-row"
+    >
+      <div class="pt-20 md:pt-0">
+        <img
+          src="img/rashford.jpg"
+          alt="face"
+          class="w-[350px] h-[250px] rounded-4xl border-2 border-white animate-float-shimmer"
+        />
+      </div>
+      <div class="flex flex-start flex-col gap-5 text-white md:pt-25">
+        <h2 class="text-3xl capitalize font-bold">about me</h2>
+        <p class="text-sm pb-2 max-w-100 md:max-w-120">
+          Halo semua, saya
+          <span class="text-xl text-yellow-300">Marcus Rashford</span>. Bagi
+          kebanyakan dari kalian, mungkin kalian mengenal saya sebagai penyerang
+          nomor 9 di Manchester United atau nomor 10 saat mengenakan jersey tim
+          nasional Inggris. Lahir dan besar di Wythenshawe, Manchester Selatan,
+          bermain untuk klub kota kelahiran saya adalah mimpi yang menjadi
+          kenyataan sejak saya berusia tujuh tahun.
+        </p>
+        <div class="flex gap-5 pb-20">
+          <a href="" class="text-white hover:text-red-300 text-xl"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="" class="text-white hover:text-red-300 text-xl"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="" class="text-white hover:text-red-300 text-xl"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="" class="text-white hover:text-red-300 text-xl"
+            ><i class="fa fa-behance"></i
+          ></a>
+        </div>
+      </div>
+      <!-- <div class="absolute top-11 right-0 bg-red-600 -z-10 w-full h-full"></div> -->
+    </section>
+
+        <section
+      class="p-10 pt-83 pb-93 flex flex-col h-screen justify-center items-center bg-blue-700 gap-10 md:flex-row-reverse"
+    >
+      <div class="pt-20 md:pt-0">
+        <img
+          src="img/images.jpg"
+          alt="face"
+          class="w-[250px] h-[300px] rounded-4xl border-2 border-white animate-cosmic-rotate"
+        />
+      </div>
+      <div class="flex flex-start flex-col gap-5 text-white md:pt-25">
+        <h2 class="text-3xl capitalize font-bold">about me</h2>
+        <p class="text-sm pb-2 max-w-220 md:max-w-120">
+          Halo semuanya, saya
+          <span class="text-xl text-yellow-300">N'Golo Kanté</span>. Saya adalah
+          seorang pemain sepak bola yang selalu berusaha memberikan yang terbaik
+          di lini tengah untuk membantu tim saya menang. Bagi saya, sepak bola
+          adalah tentang kerja keras bersama, berlari demi teman satu tim, dan
+          memastikan pertahanan kita aman. Saya sangat bersyukur atas semua
+          trofi yang telah saya menangkan bersama Leicester, Chelsea,
+          Al-Ittihad, dan Timnas Prancis. Namun yang paling penting bagi saya
+          adalah tetap bekerja keras dan menghormati semua orang, baik di dalam
+          maupun di luar lapangan.
+        </p>
+        <div class="flex gap-5 pb-20">
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-facebook"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-instagram"></i
+          ></a>
+          <a href="" class="text-white hover:text-blue-300 text-xl"
+            ><i class="fa fa-behance"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+ </body>
+</html>

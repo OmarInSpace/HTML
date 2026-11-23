@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dark Mode Toggle (Tanpa Config)</title>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body id="body" class="min-h-screen flex items-center justify-center bg-gray-100 transition-colors duration-300">
+
+  <div id="card" class="flex flex-col items-center gap-6 p-10 rounded-2xl bg-white shadow-lg">
+    
+    <h1 id="title" class="text-xl font-semibold text-gray-800">
+      Toggle Dark Mode
+    </h1>
+
+    <!-- Tombol Toggle -->
+    <button
+      id="themeToggle"
+      class="flex items-center justify-center w-14 h-14 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors duration-300"
+    >
+      <!-- Ikon Bulan (muncul saat tema terang, klik untuk ke gelap) -->
+      <svg id="iconMoon" class="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+
+      <!-- Ikon Matahari (muncul saat tema gelap, klik untuk ke terang) -->
+      <svg id="iconSun" class="hidden w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="5"/>
+        <path stroke-linecap="round" d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+    </button>
+
+    <p id="desc" class="text-sm text-gray-500">
+      Klik tombol untuk mengganti tema
+    </p>
+  </div>
+
+<script>
+  const body = document.getElementById('body');
+  const card = document.getElementById('card');
+  const title = document.getElementById('title');
+  const desc = document.getElementById('desc');
+  const toggleBtn = document.getElementById('themeToggle');
+  const iconMoon = document.getElementById('iconMoon');
+  const iconSun = document.getElementById('iconSun');
+
+  let isDark = false;
+
+  toggleBtn.addEventListener('click', function () {
+    isDark = !isDark;
+
+    // Ganti warna background halaman
+    body.classList.toggle('bg-gray-100', !isDark);
+    body.classList.toggle('bg-gray-900', isDark);
+
+    // Ganti warna kartu
+    card.classList.toggle('bg-white', !isDark);
+    card.classList.toggle('bg-gray-800', isDark);
+
+    // Ganti warna judul
+    title.classList.toggle('text-gray-800', !isDark);
+    title.classList.toggle('text-gray-100', isDark);
+
+    // Ganti warna teks deskripsi
+    desc.classList.toggle('text-gray-500', !isDark);
+    desc.classList.toggle('text-gray-400', isDark);
+
+    // Ganti warna tombol
+    toggleBtn.classList.toggle('bg-gray-200', !isDark);
+    toggleBtn.classList.toggle('hover:bg-gray-300', !isDark);
+    toggleBtn.classList.toggle('bg-gray-700', isDark);
+    toggleBtn.classList.toggle('hover:bg-gray-600', isDark);
+
+    // Ganti ikon: gelap -> matahari, terang -> bulan
+    iconMoon.classList.toggle('hidden', isDark);
+    iconSun.classList.toggle('hidden', !isDark);
+  });
+</script>
+
+</body>
+</html>

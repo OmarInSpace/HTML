@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>AFL</title>
+  </head>
+  <body>
+    <header class="flex justify-between px-5">
+      <img src="img/afl-removebg-preview.png" alt="Logo" class="w-12 h-auto" />
+      <button id="menu-button">
+        <svg
+        id="menu-icon"
+        class="w-6 h-6"
+        fill="none"
+        stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            id="menu-path"
+            stroke-linecap="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </button>
+    </header>
+    <nav id="mobile-menu" class="hidden flex flex-col gap-1 bg-gray-800 text-white font-poppins">
+      <a href="#" class="hover:bg-gray-900 p-4">Matches</a>
+      <a href="#" class="hover:bg-gray-900 p-4">Table</a>
+      <a href="#" class="hover:bg-gray-900 p-4">Statistics</a>
+      <a href="#" class="hover:bg-gray-900 p-4">News</a>
+      <a href="#" class="hover:bg-gray-900 p-4">Transfers</a>
+    </nav>
+    <section class="bg-gray-900 text-white p-10">
+      <div class="bg-[url('/img/Mcarrick.png')] rounded-t-2xl bg-center bg-no-repeat bg-cover">
+        <h1 class="text-[14px] font-archivo pt-30 px-3 pb-3 font-bold">
+          Michael Carrick <br> menyalahkan dirinya atas tersingkirnya Manchester
+          United dari ajang piala Carabao
+        </h1>
+      </div>
+      <div class="bg-gray-800 p-3 rounded-b-2xl">
+        <button id="read-button">Read More &rarr;</button>
+      <p id="des-full" class="hidden">
+        Manajer Manchester United Michael Carrick mengakui bahwa ia sepenuhnya
+        memahami frustrasi para pendukung setelah timnya menelan kekalahan
+        mengejutkan 3-2 dari Brighton di Carabao Cup. <br><br> Meski sempat unggul dua
+        gol lewat Shea Lacey dan Mason Mount, Manchester United akhirnya
+        kolaps di Old Trafford.
+      </p>
+      </div>
+    </section>
+
+
+
+
+    <script>
+      const menuButton = document.getElementById("menu-button");
+
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      const menuPath = document.getElementById("menu-path");
+
+      // deteksi click pada tombol menu
+      menuButton.addEventListener("click", () => {
+        // kondisi aksinya
+        mobileMenu.classList.toggle("hidden");
+        // cek apakah menu sedang terbuka?
+        const isOpen = mobileMenu.classList.contains("hidden");
+        // ubah icon menu
+        //       if (isOpen) {
+        //     menuPath.setAttribute("d", "M6 6l12 12M6 18L18 6");
+        // } else {
+        //     menuPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+        // }
+        menuPath.setAttribute(
+          "d",
+          isOpen ? "M4 6h16M4 12h16M4 18h16" : "M6 18L18 6M6 6l12 12",
+        );
+      });
+
+       const readButton = document.getElementById("read-button");
+
+      const descriptionFull = document.getElementById("des-full");
+
+
+      // deteksi click pada tombol menu
+      readButton.addEventListener("click", () => {
+        // kondisi aksinya
+        readButton.classList.toggle("hidden");
+        descriptionFull.classList.toggle("hidden");
+        // cek apakah menu sedang terbuka?
+        const isOpen = descriptionFull.classList.contains("hidden");
+        const isClick = descriptionFull.classList.contains("hidden");
+        // ubah icon menu
+        //       if (isOpen) {
+        //     menuPath.setAttribute("d", "M6 6l12 12M6 18L18 6");
+        // } else {
+        //     menuPath.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+        // }
+      });
+    </script>
+  </body>
+</html>

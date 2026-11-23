@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan 3 || Dark Mode || Responsive Navigasi</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body class="bg-white text-slate-800 dark:bg-slate-900 dark:text-white transition-colors duration-300">
+    <div class="flex min-h-screen items-center justify-center">
+      <div class="w-[700px] h-[700px] rounded-3xl p-14">
+        <button id="theme-toogle" class="rounded-lg bg-slate-200 px-4 py-2 font-medium text-slate-800 hover:bg-slate-300 dark:bg-slate-800 dark:text-slate-200 dark:hover:bg-slate-700">
+        Toogle Mode
+    </button>
+    </div>
+    </div>
+
+    <script>
+      // On page load, set the theme from localStorage or system settings
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+          window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+      const toogleButton = document.getElementById('theme-toogle');
+      toogleButton.addEventListener('click', () => {
+          if (document.documentElement.classList.contains('dark')) {
+              document.documentElement.classList.remove('dark');
+              localStorage.theme = 'light';
+          } else {
+              document.documentElement.classList.add('dark');
+              localStorage.theme = 'dark';
+          }
+      })
+    </script>
+  </body>
+</html>

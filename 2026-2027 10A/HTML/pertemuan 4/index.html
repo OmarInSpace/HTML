@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCL</title>
+    <link
+      rel="Shortcut icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_tywArrahKU2ib6YVexckjsXSy8ECRh2avUdOWOHleA&s=10"
+      ;
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      body {
+        font-size: 40px;
+      }
+      /* Ketika tampilan di bawah 720px */
+      @media screen and (max-width: 720px) {
+        body {
+          font-size: 16px;
+        }
+        nav {
+          display: absolute;
+          top: 10px;
+          background-color: yellow;
+          width: 100%;
+          border-radius: 20px;
+          right: -100px;
+        }
+        nav ul {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+        }
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+        color: white;
+        align-items: center;
+        padding: 10px;
+      }
+      header h1 {
+        font-size: 30px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+      span {
+        background: #b200bf;
+        background: linear-gradient(
+          143deg,
+          rgba(178, 0, 191, 1) 21%,
+          rgba(62, 0, 163, 1) 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      nav ul {
+        display: flex;
+        gap: 20px;
+      }
+      ul li {
+        list-style: none;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      button {
+        padding: 13px;
+        font-size: 14px;
+        border-radius: 10px;
+        border: 2px solid white;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      button:hover {
+        padding: 13px;
+        font-size: 14px;
+        border-radius: 10px;
+        border: 2px solid blue;
+        background-color: white;
+        color: black;
+        cursor: pointer;
+        transition: 0.4s;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigasi Start -->
+    <header>
+      <h1>UEFA <span>Champions</span> League</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">ThankYou</a></li>
+        </ul>
+      </nav>
+      <button>Click Here</button>
+    </header>
+    <!-- Navigasi End -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab dicta aperiam
+      quam recusandae expedita accusamus numquam, quisquam at iste, porro ipsum
+      ex corrupti voluptatem maxime? Praesentium esse voluptas distinctio
+      dolorem ipsam. Voluptatum amet neque porro unde totam adipisci architecto
+      nobis!
+    </p>
+  </body>
+</html>
